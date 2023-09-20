@@ -1,4 +1,4 @@
-# FastAPI Project Template
+# Herb Classifier Backend
 
 The REST API template repository for a FastAPI back-end project.
 
