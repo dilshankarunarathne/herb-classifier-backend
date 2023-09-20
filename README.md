@@ -1,6 +1,7 @@
-# FastAPI Project Template
+# Herb Classifier Backend
 
-The REST API template repository for a FastAPI back-end project.
+The server side application including the RestAPI with FastAPI and the ML models for the **Herb Classifier**
+application. It has OAuth2 authentication and JWT token generation. 
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -15,8 +16,25 @@ The REST API template repository for a FastAPI back-end project.
 
 ## Description
 
-This is a template repository for a FastAPI back-end project. It is intended to be used as a starting point for a new project.
-It has OAuth2 authentication and JWT token generation. It also has a basic user model and CRUD operations for users.
+We develop a centralized and comprehensive database system for Hela Wedakama using 
+the medicinal plants used in these medicine in Sri Lanka. We use image processing 
+techniques to identify five specific medicinal plants from weed plants that have similar 
+morphological features, making it difficult to distinguish them through visual inspection 
+alone.
+
+The application allows users to add locations of known medicinal plants using GPS. 
+Additionally, users can search for other plant locations using the application...
+
+### Project Scope
+This study aims to provide consumers with a reliable source of information on traditional 
+medicines by developing a centralized database system for home remedies and medicinal 
+plants used in Sri Lankan traditional home remedies, which can be accessed as a mobile 
+application. 
+
+1. A user can search what herbal plants can be medicinally useful for a certain illness / disease,
+and vice-versa.
+2. The model should at least be able to (trained for) identify three medicinal herbs.
+3. The users should be able to get the locations of which areas the plants would grow, or can be found.
 
 ## Installation
 
@@ -36,7 +54,7 @@ It has OAuth2 authentication and JWT token generation. It also has a basic user 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/dilshankarunarathne/secure-fastapi-template.git
+git clone https://github.com/dilshankarunarathne/herb-classifier-api
 ```
 
 2. Install the dependencies
@@ -48,11 +66,11 @@ pip install -r requirements.txt
 3. Create a MySQL database
 
 ```bash
-mysql -u root -p
+mysql -u root -p 
 ```
 
 ```sql
-CREATE DATABASE fastapi;
+CREATE DATABASE herbclassifier;
 ```
 
 4. Create a `.env` file in the root directory and add the following environment variables
@@ -61,7 +79,7 @@ CREATE DATABASE fastapi;
 MYSQL_USER="your mysql user"
 MYSQL_PASSWORD="your mysql password"
 MYSQL_HOST="localhost"
-MYSQL_DATABASE="fastapi"
+MYSQL_DATABASE="herbclassifier"
 MYSQL_PORT=3306
 ```
 
