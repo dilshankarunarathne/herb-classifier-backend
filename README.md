@@ -66,11 +66,11 @@ pip install -r requirements.txt
 3. Create a MySQL database
 
 ```bash
-mysql -u root -p
+mysql -u root -p 
 ```
 
 ```sql
-CREATE DATABASE fastapi;
+CREATE DATABASE herbclassifier;
 ```
 
 4. Create a `.env` file in the root directory and add the following environment variables
@@ -79,7 +79,7 @@ CREATE DATABASE fastapi;
 MYSQL_USER="your mysql user"
 MYSQL_PASSWORD="your mysql password"
 MYSQL_HOST="localhost"
-MYSQL_DATABASE="fastapi"
+MYSQL_DATABASE="herbclassifier"
 MYSQL_PORT=3306
 ```
 
