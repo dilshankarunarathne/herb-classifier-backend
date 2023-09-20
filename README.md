@@ -22,6 +22,9 @@ techniques to identify five specific medicinal plants from weed plants that have
 morphological features, making it difficult to distinguish them through visual inspection 
 alone.
 
+The application allows users to add locations of known medicinal plants using GPS. 
+Additionally, users can search for other plant locations using the application...
+
 ## Installation
 
 ### Prerequisites
