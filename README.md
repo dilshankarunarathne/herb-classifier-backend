@@ -54,7 +54,7 @@ and vice-versa.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/dilshankarunarathne/secure-fastapi-template.git
+git clone https://github.com/dilshankarunarathne/herb-classifier-api
 ```
 
 2. Install the dependencies
