@@ -33,7 +33,7 @@ application.
 
 1. A user can search what herbal plants can be medicinally useful for a certain illness / disease,
 and vice-versa.
-2. The model should at least be able to (trained for) identify 
+2. The model should at least be able to (trained for) identify three medicinal herbs.
 
 ## Installation
 
