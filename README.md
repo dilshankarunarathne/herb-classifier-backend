@@ -31,7 +31,9 @@ medicines by developing a centralized database system for home remedies and medi
 plants used in Sri Lankan traditional home remedies, which can be accessed as a mobile 
 application. 
 
-1. A user can search what herbal plants can be medicinally useful for a certain illness / disease. 
+1. A user can search what herbal plants can be medicinally useful for a certain illness / disease,
+and vice-versa.
+2. 
 
 ## Installation
 
