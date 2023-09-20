@@ -34,7 +34,7 @@ application.
 1. A user can search what herbal plants can be medicinally useful for a certain illness / disease,
 and vice-versa.
 2. The model should at least be able to (trained for) identify three medicinal herbs.
-3. The users should be able to get the locations of which areas 
+3. The users should be able to get the locations of which areas the plants would grow. 
 
 ## Installation
 
