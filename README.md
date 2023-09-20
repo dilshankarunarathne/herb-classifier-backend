@@ -16,7 +16,11 @@ application. It has OAuth2 authentication and JWT token generation.
 
 ## Description
 
-
+We develop a centralized and comprehensive database system for Hela Wedakama using 
+the medicinal plants used in these medicine in Sri Lanka. We use image processing 
+techniques to identify five specific medicinal plants from weed plants that have similar 
+morphological features, making it difficult to distinguish them through visual inspection 
+alone.
 
 ## Installation
 
