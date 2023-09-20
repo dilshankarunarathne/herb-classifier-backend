@@ -31,6 +31,8 @@ medicines by developing a centralized database system for home remedies and medi
 plants used in Sri Lankan traditional home remedies, which can be accessed as a mobile 
 application. 
 
+
+
 ## Installation
 
 ### Prerequisites
