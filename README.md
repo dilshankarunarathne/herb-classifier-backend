@@ -25,6 +25,12 @@ alone.
 The application allows users to add locations of known medicinal plants using GPS. 
 Additionally, users can search for other plant locations using the application...
 
+### Project Scope
+This study aims to provide consumers with a reliable source of information on traditional 
+medicines by developing a centralized database system for home remedies and medicinal 
+plants used in Sri Lankan traditional home remedies, which can be accessed as a mobile 
+application. 
+
 ## Installation
 
 ### Prerequisites
