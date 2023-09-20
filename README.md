@@ -1,7 +1,7 @@
 # Herb Classifier Backend
 
 The server side application including the RestAPI with FastAPI and the ML models for the **Herb Classifier**
-application. 
+application. It has OAuth2 authentication and JWT token generation. 
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -16,8 +16,10 @@ application.
 
 ## Description
 
-This is a template repository for a FastAPI back-end project. It is intended to be used as a starting point for a new project.
-It has OAuth2 authentication and JWT token generation. It also has a basic user model and CRUD operations for users.
+This is a template repository for a FastAPI back-end project. 
+It is intended to be used as a starting point for a new project.
+
+It also has a basic user model and CRUD operations for users.
 
 ## Installation
 
