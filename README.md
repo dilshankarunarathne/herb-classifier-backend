@@ -1,6 +1,6 @@
 # Herb Classifier Backend
 
-The server side application including the RestAPI with FastAPI and the ML models for the Herb Classifier
+The server side application including the RestAPI with FastAPI and the ML models for the **Herb Classifier**
 application. 
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
