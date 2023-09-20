@@ -16,10 +16,7 @@ application. It has OAuth2 authentication and JWT token generation.
 
 ## Description
 
-This is a template repository for a FastAPI back-end project. 
-It is intended to be used as a starting point for a new project.
 
-It also has a basic user model and CRUD operations for users.
 
 ## Installation
 
