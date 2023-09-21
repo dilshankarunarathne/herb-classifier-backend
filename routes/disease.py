@@ -13,7 +13,7 @@ router = APIRouter(
 
 @router.post("search")
 async def search_disease(
-        
+        disease: str,
     token: str = Depends(oauth2_scheme)
 ):
     # TODO implement this
