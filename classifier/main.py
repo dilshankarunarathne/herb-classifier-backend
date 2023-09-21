@@ -2,7 +2,7 @@ import numpy as np
 from tensorflow.keras.preprocessing import image
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-model_file_path = os.path.join(current_dir, 'model.joblib')
+model_file_path = os.path.join(current_dir, 'model.h5')
 
 img_path = 'test.png'
 input_size = (150, 150)
