@@ -34,7 +34,7 @@ class LocationDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def get_location(self, herb):
+    def get_location_by_herb(self, herb):
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM location WHERE herb = %s"
