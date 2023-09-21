@@ -4,4 +4,4 @@ dao = HerbDAO(host="localhost", user="root", password="", database="herb")
 dao.connect()
 
 
-def get_disease_by_herb()
+def get_disease_by_herb(herb)
