@@ -14,3 +14,4 @@ def recognize_plant(image):
     )
 
     # TODO rest of the implementation
+    pass
