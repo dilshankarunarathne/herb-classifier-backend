@@ -47,4 +47,4 @@ class HerbDAO:
         except mysql.connector.Error as err:
             print(err)
 
-    
+    def get_herb
