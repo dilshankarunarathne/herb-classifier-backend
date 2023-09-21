@@ -15,6 +15,6 @@ def get_disease_by_herb(herb):
 def get_herb_by_disease(disease):
     herbs = dao.get_disease(herb)
     return_list = []
-    for d in diseases:
+    for d in herbs:
         return_list.append(d[0])
     return return_list
