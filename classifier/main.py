@@ -10,7 +10,7 @@ def recognize_plant(image):
         swapRB=False
     )
 
-    
+    input_size = (150, 150)
 
     # TODO rest of the implementation
     pass
