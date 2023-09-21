@@ -5,7 +5,7 @@ dao.connect()
 
 
 def get_disease_by_herb(herb):
-    diseases = dao.get_all()
+    diseases = dao.get_disease(herb)
     return_list = []
     for d in diseases:
         return_list.append(d[0])
