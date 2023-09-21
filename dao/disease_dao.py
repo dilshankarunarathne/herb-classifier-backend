@@ -43,5 +43,6 @@ class DiseaseDAO:
             cursor.close()
             if row is None:
                 return None
+            return 
         except mysql.connector.Error as err:
             print(err)
