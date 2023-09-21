@@ -35,3 +35,4 @@ class DiseaseDAO:
             self.cnx.close()
 
     def get_disease_details(self, disease):
+        
