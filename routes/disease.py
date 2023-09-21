@@ -4,7 +4,7 @@ from auth.authorize import oauth2_scheme, get_current_user, credentials_exceptio
 from services.disease_service import get_disease_details
 
 """
-    routers for authentication
+    routers for diseases
 """
 
 router = APIRouter(
