@@ -9,4 +9,8 @@ def add_location(lon, lat, herb):
 
 
 def get_location(herb):
-    
+    herbs = dao.get_disease(disease)
+    return_list = []
+    for d in herbs:
+        return_list.append(d[0])
+    return return_list
