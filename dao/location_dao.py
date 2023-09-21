@@ -35,7 +35,17 @@ class LocationDAO:
             self.cnx.close()
 
     def get_location(self, herb):
-        
+        try:
+            cursor = self.cnx.cursor()
+            query = "SELECT herb FROM herbs WHERE disease = %s"
+            cursor.execute(query, (disease, ))
+            rows = cursor.fetchall()
+            cursor.close()
+            if not rows:
+                return None
+            return rows
+        except mysql.connector.Error as err:
+            print(err)
 
     def add_location(self, lon, lat, herb):
         cursor = self.cnx.cursor()
