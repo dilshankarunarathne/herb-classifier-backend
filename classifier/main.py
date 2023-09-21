@@ -34,3 +34,4 @@ def recognize_plant(image) -> str:
     return predicted_class
 
 
+
