@@ -5,9 +5,9 @@ from dao.user_dao import UserDAO
 dao = UserDAO(host="localhost", user="root", password="", database="enad")
 try:
     dao.connect()
-    print("EnAdDB connection successful")
+    print("Herb DB connection successful")
 except Exception as e:
-    print("User DB connection error:", e)
+    print("Herb DB connection error:", e)
 
 
 def add_new_user(user: User):
