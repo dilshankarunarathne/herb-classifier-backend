@@ -12,4 +12,4 @@ def get_disease_by_herb(herb):
     return return_list
 
 
-def get_herb_by_disease
+def get_herb_by_disease(disease)
