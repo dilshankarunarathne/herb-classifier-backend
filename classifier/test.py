@@ -1,7 +1,7 @@
 import os
 import numpy as np
 from tensorflow.keras.preprocessing import image
-
+from keras.models import load_model
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 model_file_path = os.path.join(current_dir, '..', 'bin', 'classifier_sequential.h5')
