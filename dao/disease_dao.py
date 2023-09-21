@@ -29,3 +29,5 @@ class DiseaseDAO:
                 print("Database does not exist")
             else:
                 print(err)
+
+    
