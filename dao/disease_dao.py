@@ -40,6 +40,7 @@ class DiseaseDAO:
             query = "SELECT * FROM disease WHERE disease = %s"
             values = disease
             cursor.execute(query, values)
+            result = cursor.fetchone()[0]
             self.cnx.commit()
             cursor.close()
         except mysql.connector.Error as err:
