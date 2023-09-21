@@ -32,6 +32,3 @@ def recognize_plant(image) -> str:
     predicted_class = plant_classes[np.argmax(predictions[0])]
 
     return predicted_class
-
-
-
