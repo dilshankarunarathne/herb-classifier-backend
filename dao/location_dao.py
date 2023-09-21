@@ -39,7 +39,7 @@ class LocationDAO:
         add_user = ("INSERT INTO location "
                     "(lon, lat, herb) "
                     "VALUES (%s, %s, %s)")
-        data_user = (user.id, user.username, user.email, user.is_admin, user.hashed_password)
-        cursor.execute(add_user, data_user)
+        data = (lon, lat, herb)
+        cursor.execute(add_user, data)
         self.cnx.commit()
         cursor.close()
