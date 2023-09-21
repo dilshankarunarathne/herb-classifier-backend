@@ -37,7 +37,7 @@ class HerbDAO:
     def get_disease(self, herb):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT * FROM herbs WHERE herb = %s"
+            query = "SELECT disease FROM herbs WHERE herb = %s"
             cursor.execute(query, (herb, ))
             rows = cursor.fetchall()
             cursor.close()
