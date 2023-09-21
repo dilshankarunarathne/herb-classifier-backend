@@ -20,4 +20,4 @@ async def search_herb_by_disease(
     if get_current_user(token) is None:
         raise credentials_exception
 
-    return 
+    return get_herb_by_disease()
