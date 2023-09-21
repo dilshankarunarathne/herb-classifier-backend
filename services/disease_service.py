@@ -14,3 +14,4 @@ def get_all_diseases():
     return_list = []
     for d in diseases:
         return_list.append(d[0])
+    return return_list
