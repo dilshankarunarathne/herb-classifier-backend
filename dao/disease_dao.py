@@ -35,4 +35,13 @@ class DiseaseDAO:
             self.cnx.close()
 
     def get_disease_details(self, disease):
-        
+        try:
+            cursor = self.cnx.cursor()
+            query = "INSERT INTO blacklist (token, blacklisted_on) VALUES (%s, %s)"
+            timestamp = datetime.now()
+            values = (token, timestamp)
+            cursor.execute(query, values)
+            self.cnx.commit()
+            cursor.close()
+        except mysql.connector.Error as err:
+            print(err)
