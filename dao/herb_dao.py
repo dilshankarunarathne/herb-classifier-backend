@@ -50,7 +50,7 @@ class HerbDAO:
     def get_herb(self, disease):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT * FROM herbs WHERE herb = %s"
+            query = "SELECT * FROM herbs WHERE disease = %s"
             cursor.execute(query, (herb, ))
             row = cursor.fetchone()
             cursor.close()
