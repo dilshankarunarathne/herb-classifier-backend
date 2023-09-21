@@ -17,5 +17,7 @@ def recognize_plant(image):
     img_array = np.expand_dims(img_array, axis=0)
     img_array = img_array / 255.0  # Normalize pixel values to [0, 1]
 
+    predictions = model.predict(img_array)
+
     # TODO rest of the implementation
     pass
