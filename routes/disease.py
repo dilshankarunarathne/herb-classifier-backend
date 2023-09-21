@@ -15,3 +15,4 @@ router = APIRouter(
 async def search_disease(
 
 ):
+    # TODO implement this
