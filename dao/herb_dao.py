@@ -46,3 +46,5 @@ class HerbDAO:
             return row
         except mysql.connector.Error as err:
             print(err)
+
+    
