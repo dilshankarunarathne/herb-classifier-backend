@@ -14,5 +14,8 @@ def recognize_plant(image):
     img = image.load_img(blob, target_size=input_size)
     img_array = image.img_to_array(img)
 
+    img_array = np.expand_dims(img_array, axis=0)
+    img_array = img_array / 255.0  # Normalize pixel values to [0, 1]
+
     # TODO rest of the implementation
     pass
