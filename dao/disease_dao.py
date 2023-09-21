@@ -38,7 +38,6 @@ class DiseaseDAO:
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM disease WHERE disease = %s"
-            timestamp = datetime.now()
             values = (token, timestamp)
             cursor.execute(query, values)
             self.cnx.commit()
