@@ -27,7 +27,6 @@ async def register_user(
         username: str = Form(...),
         email: str = Form(...),
         password: str = Form(...),
-        is_instructor: bool = Form(...),
         is_adviser=None):
     if user_exists(username):
         raise HTTPException(
