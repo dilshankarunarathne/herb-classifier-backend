@@ -13,3 +13,5 @@ class LocationDAO:
         self.password = password
         self.database = database
         self.cnx = None
+
+    
