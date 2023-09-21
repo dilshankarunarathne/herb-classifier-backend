@@ -37,7 +37,7 @@ class DiseaseDAO:
     def get_all(self):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT * FROM disease WHERE disease = %s"
+            query = "SELECT (*) FROM disease WHERE disease = %s"
             cursor.execute(query, (disease, ))
             row = cursor.fetchone()
             cursor.close()
