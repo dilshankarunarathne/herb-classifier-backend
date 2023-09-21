@@ -9,4 +9,4 @@ def add_location(lon, lat, herb):
 
 
 def get_location(herb):
-    return dao.get_location(herb)
+    
