@@ -42,6 +42,6 @@ class DiseaseDAO:
             cursor.execute(query, values)
             result = cursor.fetchone()[0]
             cursor.close()
-            return 
+            return result
         except mysql.connector.Error as err:
             print(err)
