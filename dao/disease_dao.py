@@ -39,8 +39,9 @@ class DiseaseDAO:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM disease WHERE disease = %s"
             cursor.execute(query, (disease, ))
-            result = cursor.fetchone()[0]
+            row = cursor.fetchone()
             cursor.close()
-            return result
+            if row is None:
+                return None
         except mysql.connector.Error as err:
             print(err)
