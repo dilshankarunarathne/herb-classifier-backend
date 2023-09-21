@@ -38,7 +38,7 @@ class DiseaseDAO:
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM disease WHERE disease = %s"
-            values = (disease)
+            values = disease
             cursor.execute(query, values)
             self.cnx.commit()
             cursor.close()
