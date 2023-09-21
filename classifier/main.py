@@ -1,7 +1,6 @@
 import numpy as np
 from tensorflow.keras.preprocessing import image
 
-# Load a sample image
 img_path = 'dataset/test.png'  # Replace with the actual path to your image file
 input_size = (150, 150)
 
