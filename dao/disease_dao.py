@@ -39,7 +39,7 @@ class DiseaseDAO:
             cursor = self.cnx.cursor()
             query = "SELECT (disease) FROM disease"
             cursor.execute(query)
-            row = cursor.fetchone()
+            row = cursor.fetch()
             cursor.close()
             if row is None:
                 return None
