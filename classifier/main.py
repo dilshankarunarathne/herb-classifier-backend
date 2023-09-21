@@ -12,6 +12,7 @@ def recognize_plant(image):
 
     input_size = (227, 227)
     img = image.load_img(blob, target_size=input_size)
+    img_array = image.img_to_array(img)
 
     # TODO rest of the implementation
     pass
