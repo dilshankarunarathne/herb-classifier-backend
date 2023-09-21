@@ -79,7 +79,7 @@ CREATE DATABASE herbclassifier;
 MYSQL_USER="your mysql user"
 MYSQL_PASSWORD="your mysql password"
 MYSQL_HOST="localhost"
-MYSQL_DATABASE="herbclassifier"
+MYSQL_DATABASE="herb"
 MYSQL_PORT=3306
 ```
 
