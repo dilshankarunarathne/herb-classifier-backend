@@ -1,6 +1,8 @@
 import cv2
 
-
+current_dir = os.path.dirname(os.path.abspath(__file__))
+model_file_path = os.path.join(current_dir, '..', 'bin', 'classifier_sequential.h5')
+model = load_model(model_file_path)
 
 
 def recognize_plant(image):
