@@ -10,5 +10,7 @@ def recognize_plant(image):
         swapRB=False
     )
 
+    
+
     # TODO rest of the implementation
     pass
