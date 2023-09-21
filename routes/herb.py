@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Form, Depends
 
 from auth.authorize import oauth2_scheme
+from services.herb_service import get_herb_by_disease
 
 """
     routers for herbs
