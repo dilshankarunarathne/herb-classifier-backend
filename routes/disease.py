@@ -9,7 +9,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 
 router = APIRouter(
     prefix="/api/disease",
-    tags=["auth"],
+    tags=["disease"],
     responses={404: {"description": "The requested page was not found"}},
 )
 
