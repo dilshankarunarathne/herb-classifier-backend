@@ -41,7 +41,6 @@ class DiseaseDAO:
             values = disease
             cursor.execute(query, values)
             result = cursor.fetchone()[0]
-            self.cnx.commit()
             cursor.close()
         except mysql.connector.Error as err:
             print(err)
