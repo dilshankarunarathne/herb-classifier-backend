@@ -34,7 +34,7 @@ class DiseaseDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def query_disease_details(self, disease):
+    def query_disease(self, disease):
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM disease WHERE disease = %s"
