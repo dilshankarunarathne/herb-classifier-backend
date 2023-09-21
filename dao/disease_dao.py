@@ -37,7 +37,7 @@ class DiseaseDAO:
     def get_disease_details(self, disease):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT * FROM disease WHERE "
+            query = "SELECT * FROM disease WHERE 'disease'"
             timestamp = datetime.now()
             values = (token, timestamp)
             cursor.execute(query, values)
