@@ -6,3 +6,4 @@ from mysql.connector import errorcode
 """
 
 class DiseaseDAO:
+    
