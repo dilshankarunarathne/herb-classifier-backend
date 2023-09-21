@@ -12,4 +12,6 @@ router = APIRouter(
 
 
 @router.post
-async def search_disease()
+async def search_disease(
+
+):
