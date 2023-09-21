@@ -52,10 +52,10 @@ class HerbDAO:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM herbs WHERE disease = %s"
             cursor.execute(query, (disease, ))
-            row = cursor.fetchall()
+            rows = cursor.fetchall()
             cursor.close()
-            if row is None:
+            if not rows:
                 return None
-            return row
+            return rows
         except mysql.connector.Error as err:
             print(err)
