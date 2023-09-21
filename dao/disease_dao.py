@@ -37,7 +37,7 @@ class DiseaseDAO:
     def get_disease_details(self, disease):
         try:
             cursor = self.cnx.cursor()
-            query = "INSERT INTO blacklist (token, blacklisted_on) VALUES (%s, %s)"
+            query = "SELECT * FROM `disease`"
             timestamp = datetime.now()
             values = (token, timestamp)
             cursor.execute(query, values)
