@@ -6,7 +6,6 @@ from mysql.connector import errorcode
 """
 
 
-
 class HerbDAO:
     def __init__(self, host, user, password, database):
         self.host = host
@@ -14,5 +13,3 @@ class HerbDAO:
         self.password = password
         self.database = database
         self.cnx = None
-
-    
