@@ -37,8 +37,8 @@ class LocationDAO:
     def get_location(self, herb):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT herb FROM herbs WHERE disease = %s"
-            cursor.execute(query, (disease, ))
+            query = "SELECT * FROM location WHERE herb = %s"
+            cursor.execute(query, (herb, ))
             rows = cursor.fetchall()
             cursor.close()
             if not rows:
