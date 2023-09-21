@@ -1,3 +1,3 @@
 from pydantic import BaseModel
 
-class Herb(BaseModel)
+class Herb(BaseModel):
