@@ -29,5 +29,7 @@ def recognize_plant(image):
 
     predictions = model.predict(img_array)
 
+    predicted_class = plant_classes[np.argmax(predictions[0])]
+
     # TODO rest of the implementation
     pass
