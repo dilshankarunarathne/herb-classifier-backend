@@ -34,4 +34,4 @@ class HerbDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def get_disease(self):
+    def get_disease(self, herb):
