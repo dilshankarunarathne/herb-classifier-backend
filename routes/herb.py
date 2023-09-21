@@ -12,7 +12,7 @@ router = APIRouter(
     responses={404: {"description": "The requested page was not found"}},
 )
 
-@router.post("")
+@router.post("search-herbs")
 async def search_herb_by_disease(
     disease: str = Form(...),
     token: str = Depends(oauth2_scheme)
