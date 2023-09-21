@@ -39,7 +39,7 @@ async def register_user(
         username=username,
         email=email,
         hashed_password=hashed_password,
-        is_adviser=is_adviser,
+        is_admin=is_adviser,
     )
     add_new_user(user)
     return user
