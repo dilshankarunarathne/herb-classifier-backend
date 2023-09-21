@@ -35,3 +35,4 @@ class LocationDAO:
             self.cnx.close()
 
     def add_location(self, lon, lat, herb):
+        
