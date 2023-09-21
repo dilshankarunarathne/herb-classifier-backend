@@ -35,6 +35,7 @@ class LocationDAO:
             self.cnx.close()
 
     def get_location(self, herb):
+        
 
     def add_location(self, lon, lat, herb):
         cursor = self.cnx.cursor()
