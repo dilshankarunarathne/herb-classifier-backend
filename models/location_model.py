@@ -5,4 +5,3 @@ class Location(BaseModel):
     id: int
     lon: float
     lat: float
-    name: str
