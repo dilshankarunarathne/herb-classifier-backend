@@ -4,6 +4,6 @@ from routes import auth, disease
 
 app = FastAPI()
 
-app.add_route(auth)
+app.include_router(auth)
 app.add_route(disease)
 
