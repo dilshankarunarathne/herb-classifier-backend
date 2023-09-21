@@ -27,8 +27,7 @@ async def register_user(
         username: str = Form(...),
         email: str = Form(...),
         password: str = Form(...),
-        is_instructor: bool = Form(...),
-        is_adviser=None):
+        is_admin=None):
     if user_exists(username):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -40,7 +39,7 @@ async def register_user(
         username=username,
         email=email,
         hashed_password=hashed_password,
-        is_adviser=is_adviser,
+        is_admin=is_admin,
     )
     add_new_user(user)
     return user
