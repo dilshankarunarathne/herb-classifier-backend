@@ -1,7 +1,7 @@
 import numpy as np
 from tensorflow.keras.preprocessing import image
 
-img_path = 'dataset/test.png'  
+img_path = 'test.png'
 input_size = (150, 150)
 
 img = image.load_img(img_path, target_size=input_size)
