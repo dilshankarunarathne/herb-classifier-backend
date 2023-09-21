@@ -35,3 +35,4 @@ class HerbDAO:
             self.cnx.close()
 
     def get_disease(self, herb):
+        
