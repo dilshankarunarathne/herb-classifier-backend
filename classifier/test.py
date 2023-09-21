@@ -5,7 +5,7 @@ from keras.models import load_model
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 model_file_path = os.path.join(current_dir, '..', 'bin', 'classifier_sequential.h5')
-model = None  # TODO load model here
+model = load_model(model_file_path)
 
 img_path = 'test.png'
 input_size = (150, 150)
