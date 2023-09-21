@@ -6,4 +6,4 @@ from mysql.connector import errorcode
 """
 
 class DiseaseDAO:
-    def __int__(self):
+    def __int__(self, ):
