@@ -1,4 +1,4 @@
-
+from services.user_service import dao
 
 
 def add_token_to_blacklist(token: str):
