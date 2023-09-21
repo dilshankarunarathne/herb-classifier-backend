@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Form, Depends
 
-from auth.authorize import oauth2_scheme, get_current_user
+from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
 from services.herb_service import get_herb_by_disease
 
 """
