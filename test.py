@@ -7,3 +7,4 @@ def get_disease_details(disease):
     return dao.query_disease(disease)
 
 
+print(get_disease_details("semgedi"))
