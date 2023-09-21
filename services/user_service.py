@@ -2,7 +2,7 @@ from models.user_model import User
 
 from dao.user_dao import UserDAO
 
-dao = UserDAO(host="localhost", user="root", password="", database="enad")
+dao = UserDAO(host="localhost", user="root", password="", database="herb")
 try:
     dao.connect()
     print("Herb DB connection successful")
