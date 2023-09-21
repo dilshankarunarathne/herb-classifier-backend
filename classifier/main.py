@@ -3,4 +3,4 @@ import numpy as np
 from tensorflow.keras.preprocessing import image
 
 
-def 
+def recognize_plant
