@@ -4,4 +4,4 @@ dao = DiseaseDAO(host="localhost", user="root", password="", database="herb")
 
 
 def get_disease_details():
-    pass
+    dao.query_disease()
