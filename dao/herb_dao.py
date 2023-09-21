@@ -38,7 +38,7 @@ class HerbDAO:
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM disease WHERE disease = %s"
-            cursor.execute(query, (disease, ))
+            cursor.execute(query, (herb, ))
             row = cursor.fetchone()
             cursor.close()
             if row is None:
