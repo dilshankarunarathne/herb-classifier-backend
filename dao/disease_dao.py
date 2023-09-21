@@ -38,8 +38,7 @@ class DiseaseDAO:
         try:
             cursor = self.cnx.cursor()
             query = "SELECT * FROM disease WHERE disease = %s"
-            values = (disease, )
-            cursor.execute(query, (values, ))
+            cursor.execute(query, (disease, ))
             result = cursor.fetchone()[0]
             cursor.close()
             return result
