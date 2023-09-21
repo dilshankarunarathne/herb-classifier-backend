@@ -8,4 +8,4 @@ def get_disease_details(disease):
 
 
 for i in get_disease_details("semgedi"):
-print()
+    print(i)
