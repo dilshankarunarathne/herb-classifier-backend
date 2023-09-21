@@ -34,6 +34,8 @@ class LocationDAO:
         if self.cnx is not None:
             self.cnx.close()
 
+    
+
     def add_location(self, lon, lat, herb):
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO location "
