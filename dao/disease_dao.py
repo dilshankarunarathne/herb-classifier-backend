@@ -34,4 +34,4 @@ class DiseaseDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def get_disease_details(self):
+    def get_disease_details(self, disease):
