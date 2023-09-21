@@ -1,3 +1,3 @@
 from pydantic import BaseModel
 
-class Disease
+class Disease(BaseModel)
