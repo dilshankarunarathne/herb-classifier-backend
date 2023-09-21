@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Form, Depends
 
-from auth.authorize import oauth2_scheme
+from auth.authorize import oauth2_scheme, get_current_user
 from services.disease_service import get_disease_details
 
 """
@@ -21,5 +21,5 @@ async def search_disease(
 ):
     if get_current_user(token) is None:
         raise credentials_exception
-    
+
     return get_disease_details(disease)
