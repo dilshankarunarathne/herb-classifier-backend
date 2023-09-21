@@ -11,6 +11,7 @@ def recognize_plant(image):
     )
 
     input_size = (227, 227)
+    img = image.load_img(img_path, target_size=input_size)
 
     # TODO rest of the implementation
     pass
