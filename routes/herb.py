@@ -5,7 +5,7 @@ from fastapi import APIRouter, Form, Depends
 """
 
 router = APIRouter(
-    prefix="/api/disease",
+    prefix="/api/herb",
     tags=["disease"],
     responses={404: {"description": "The requested page was not found"}},
 )
