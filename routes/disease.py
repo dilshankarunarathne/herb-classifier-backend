@@ -13,7 +13,7 @@ router = APIRouter(
 
 @router.post
 async def search_disease(
-    
+
 ):
     # TODO implement this
     pass
