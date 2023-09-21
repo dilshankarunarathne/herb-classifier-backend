@@ -48,4 +48,14 @@ class HerbDAO:
             print(err)
 
     def get_herb(self, disease):
-        
+        try:
+            cursor = self.cnx.cursor()
+            query = "SELECT * FROM herbs WHERE herb = %s"
+            cursor.execute(query, (herb, ))
+            row = cursor.fetchone()
+            cursor.close()
+            if row is None:
+                return None
+            return row
+        except mysql.connector.Error as err:
+            print(err)
