@@ -35,4 +35,14 @@ class HerbDAO:
             self.cnx.close()
 
     def get_disease(self, herb):
-        
+        try:
+            cursor = self.cnx.cursor()
+            query = "SELECT * FROM disease WHERE disease = %s"
+            cursor.execute(query, (disease, ))
+            row = cursor.fetchone()
+            cursor.close()
+            if row is None:
+                return None
+            return row
+        except mysql.connector.Error as err:
+            print(err)
