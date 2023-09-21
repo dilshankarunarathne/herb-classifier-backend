@@ -1,6 +1,8 @@
 import cv2
 
 
+
+
 def recognize_plant(image):
     blob = cv2.dnn.blobFromImage(
         image,
