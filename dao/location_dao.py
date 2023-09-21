@@ -34,4 +34,4 @@ class LocationDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def add_location(self):
+    def add_location(self, long,):
