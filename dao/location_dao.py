@@ -14,4 +14,4 @@ class LocationDAO:
         self.database = database
         self.cnx = None
 
-    
+
