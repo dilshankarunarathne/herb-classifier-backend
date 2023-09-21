@@ -11,7 +11,7 @@ model = load_model(model_file_path)
 plant_classes = ['akkapana', 'iguru', 'non', 'vishnukanthi']
 
 
-def recognize_plant(image):
+def recognize_plant(image) -> str:
     blob = cv2.dnn.blobFromImage(
         image,
         1.0,
