@@ -35,6 +35,7 @@ class DiseaseDAO:
             self.cnx.close()
 
     def get_all(self):
+        
 
     def query_disease(self, disease):
         try:
