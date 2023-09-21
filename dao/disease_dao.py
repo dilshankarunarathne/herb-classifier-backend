@@ -37,13 +37,13 @@ class DiseaseDAO:
     def get_all(self):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT (disease) FROM disease"
+            query = "SELECT disease FROM disease"
             cursor.execute(query)
-            row = cursor.fetch()
+            rows = cursor.fetchall()
             cursor.close()
-            if row is None:
+            if not rows:
                 return None
-            return row
+            return rows
         except mysql.connector.Error as err:
             print(err)
 
