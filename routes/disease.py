@@ -18,4 +18,4 @@ async def search_disease(
     disease: str = Form(...),
     token: str = Depends(oauth2_scheme)
 ):
-    return get_disease_details()
+    return get_disease_details(get_disease_details)
