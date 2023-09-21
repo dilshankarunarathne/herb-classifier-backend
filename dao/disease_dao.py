@@ -35,7 +35,17 @@ class DiseaseDAO:
             self.cnx.close()
 
     def get_all(self):
-        
+        try:
+            cursor = self.cnx.cursor()
+            query = "SELECT * FROM disease WHERE disease = %s"
+            cursor.execute(query, (disease, ))
+            row = cursor.fetchone()
+            cursor.close()
+            if row is None:
+                return None
+            return row
+        except mysql.connector.Error as err:
+            print(err)
 
     def query_disease(self, disease):
         try:
