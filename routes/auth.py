@@ -13,7 +13,7 @@ from services.user_service import user_exists, get_next_avail_id, add_new_user
 
 """
     routers for authentication.
-    register_user: register a new user  (POST)  /api/auth/register
+    register_user: register a new user  (POST)  /api/auth/register  (form-data)
 """
 
 router = APIRouter(
