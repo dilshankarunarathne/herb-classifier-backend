@@ -44,12 +44,6 @@ async def register_user(
 ):
     """
     The endpoint for registering a new user
-    :param username: the username of the new user
-    :param email: the email of the new user
-    :param password: the password of the new user
-    :param is_admin: whether the new user is an admin or not (default: False)
-    :return: the new user
-    :raises HTTPException: if the username already exists
     """
     if user_exists(username):
         raise HTTPException(
