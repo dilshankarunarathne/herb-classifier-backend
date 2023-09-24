@@ -5,5 +5,6 @@ from fastapi import APIRouter
 """
 
 router = APIRouter(
-    prefix="/api/location"
+    prefix="/api/location",
+    tags=''
 )
