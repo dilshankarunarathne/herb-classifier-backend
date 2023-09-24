@@ -15,7 +15,7 @@ router = APIRouter(
 
 
 @router.post()
-async defusedxml
+async def 
 
 
 @router.post("/add-location")
