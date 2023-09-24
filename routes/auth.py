@@ -32,6 +32,7 @@ async def register_user(
     """
     The endpoint for registering a new user
     :param username: the username of the new user
+    :param email: the email of the new user
     """
     if user_exists(username):
         raise HTTPException(
