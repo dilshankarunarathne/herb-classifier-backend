@@ -40,6 +40,7 @@ async def search_disease(
         (str) The disease details
 
     Raises:
+        HTTPException: if the user is not logged in
     """
     if get_current_user(token) is None:
         raise credentials_exception
