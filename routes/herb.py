@@ -7,7 +7,7 @@ from services.herb_service import get_herb_by_disease, get_disease_by_herb
     API router for herb endpoint
 
     Attributes:
-        
+        router (APIRouter): the router for the endpoint
 """
 
 router = APIRouter(
