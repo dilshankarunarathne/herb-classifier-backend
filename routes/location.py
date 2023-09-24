@@ -30,7 +30,8 @@ async def get_location_for_herb(
     Returns:
         The location for the herb
 
-    :raises HTTPException: if the user is not logged in
+    Raises:
+        HTTPException: if the user is not logged in
     """
     if get_current_user(token) is None:
         raise credentials_exception
