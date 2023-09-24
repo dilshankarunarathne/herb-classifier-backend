@@ -13,7 +13,7 @@ def get_disease_by_herb(herb):
 
 
 def get_herb_by_disease(disease):
-    herbs = dao.get_disease(disease)
+    herbs = dao.get_herb(disease)
     return_list = []
 
     if herbs is None:
