@@ -13,6 +13,6 @@ plugins:
 nav:
   - Documentation: index.md
   - Getting Started: getting_started.md
-  
+  - Installation: installation.md
   - Tutorials: tutorials.md
   - About: about.md
