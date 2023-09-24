@@ -14,12 +14,14 @@ router = APIRouter(
 )
 
 
-@router.post("search")
+@router.post("/search")
 async def search_disease(
     disease: str = Form(...),
     token: str = Depends(oauth2_scheme)
 ):
     if get_current_user(token) is None:
         raise credentials_exception
+
+    
 
     return get_disease_details(disease)
