@@ -24,8 +24,8 @@ async def get_location_for_herb(
     """
     The endpoint for getting location for a herb
     Args:
-    herb: the herb to search for
-    token: the token for the user
+        herb: the herb to search for
+        token: the token for the user
     Returns:
     The location for the herb
 
