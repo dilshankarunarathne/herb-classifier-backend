@@ -14,7 +14,7 @@ router = APIRouter(
 )
 
 
-@router.post("search-herbs")
+@router.post("/search-herbs")
 async def search_herb_by_disease(
         disease: str = Form(...),
         token: str = Depends(oauth2_scheme)
