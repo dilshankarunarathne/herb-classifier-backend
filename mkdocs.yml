@@ -7,4 +7,9 @@ theme:
     primary: deep-purple
     accent: deep-orange
 
-
+nav:
+  - index.md
+  - tutorials.md
+  - how-to-guides.md
+  - reference.md
+  - explanation.md
