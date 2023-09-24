@@ -4,8 +4,7 @@ from auth.authorize import oauth2_scheme, get_current_user, credentials_exceptio
 from services.disease_service import get_disease_details
 
 """
-    routers for diseases
-    search_disease: search for a disease (POST)  /api/disease/search  (form-data) disease
+    API router for disease endpoint
 """
 
 router = APIRouter(
