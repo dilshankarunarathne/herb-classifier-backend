@@ -17,7 +17,7 @@ def get_herb_by_disease(disease):
     return_list = []
 
     if herbs is None:
-        return 
+        raise TypeError
 
     for d in herbs:
         return_list.append(d[0])
