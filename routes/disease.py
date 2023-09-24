@@ -10,7 +10,6 @@ from services.disease_service import get_disease_details
         router (APIRouter): the router for the endpoint
 
     Methods:
-    
         [POST] /api/disease/search
         search_disease: the endpoint for searching a disease
 
