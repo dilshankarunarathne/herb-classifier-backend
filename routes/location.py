@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Form, Depends
 
 from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
+from services.location_service import add_location
 
 """
     API router for location endpoint 
