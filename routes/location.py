@@ -47,7 +47,11 @@ async def add_new_location(
 ):
     """
     The endpoint for adding a new location for a herb 
-    
+    Args:
+        lon (float): the longitude of the location
+        lat (float): the latitude of the location
+        herb (str): the herb to add the location for
+        token (oauth2 bearer token): the token for the user
     if get_current_user(token) is None:
         raise credentials_exception
 
