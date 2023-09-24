@@ -46,6 +46,7 @@ async def add_new_location(
     token: str = Depends(oauth2_scheme)
 ):
     """
+    The endpoint for adding a new location
     if get_current_user(token) is None:
         raise credentials_exception
 
