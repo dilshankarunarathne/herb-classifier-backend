@@ -52,6 +52,7 @@ async def search_herb_by_disease(
 ):
     """
     The endpoint for searching a disease by herb
+
     if get_current_user(token) is None:
         raise credentials_exception
 
