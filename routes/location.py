@@ -15,8 +15,6 @@ from services.location_service import add_location, get_location
 
     Raises:
         HTTPException: if the user is not logged in
-
-    Returns:
 """
 
 router = APIRouter(
