@@ -13,6 +13,7 @@ from services.disease_service import get_disease_details
         search_disease: the endpoint for searching a disease
 
     Raises:
+        HTTPException: if the user is not logged in
 """
 
 router = APIRouter(
