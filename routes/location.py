@@ -22,7 +22,7 @@ async def get_location_for_herb(
     if get_current_user(token) is None:
         raise credentials_exception
 
-    
+    return 
 
 
 @router.post("/add-location")
