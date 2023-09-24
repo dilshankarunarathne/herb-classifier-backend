@@ -16,4 +16,5 @@ async def add_new_location(
     lon: float = Form(...),
     lat: float = Form(...),
     herb: str = Form(...),
+token: str = Depends(oauth2_scheme)
 ):
