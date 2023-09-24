@@ -24,6 +24,8 @@ async def search_disease(
     :param disease: the disease to search for
     :param token: the token of the user
     :return: the disease details
+    :raises HTTPException: if the user is not logged in
+    """
     if get_current_user(token) is None:
         raise credentials_exception
 
