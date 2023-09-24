@@ -55,6 +55,7 @@ async def register_user(
         (UserInDB) The user that was registered
 
     Raises:
+        HTTPException: if the username already exists
     """
     if user_exists(username):
         raise HTTPException(
