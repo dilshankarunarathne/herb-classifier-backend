@@ -26,6 +26,8 @@ async def get_location_for_herb(
     Args:
     herb: the herb to search for
     token: the token for the user
+    Returns:
+    The location for the herb
 
     :raises HTTPException: if the user is not logged in
     """
