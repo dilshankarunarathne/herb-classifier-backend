@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from routes import auth, disease, herb
+from routes import auth, disease, herb, location
 
 app = FastAPI()
 
