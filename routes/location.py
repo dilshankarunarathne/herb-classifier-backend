@@ -12,6 +12,8 @@ from services.location_service import add_location, get_location
     Methods:
         get_location_for_herb: the endpoint for getting location for a herb
         add_new_location: the endpoint for adding a new location for a herb
+
+    Raises:
 """
 
 router = APIRouter(
