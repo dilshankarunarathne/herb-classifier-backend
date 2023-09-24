@@ -55,6 +55,8 @@ async def add_new_location(
 
     Returns:
         A message indicating the success of the operation
+
+        
     if get_current_user(token) is None:
         raise credentials_exception
 
