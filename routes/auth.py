@@ -30,7 +30,8 @@ async def register_user(
         is_admin=False
 ):
     """
-    The endpoint
+    The endpoint for registering a new user
+    
     """
     if user_exists(username):
         raise HTTPException(
