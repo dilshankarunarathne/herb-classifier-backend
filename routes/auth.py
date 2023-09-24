@@ -82,6 +82,7 @@ async def login_for_access_token(
     The endpoint for logging in a user
 
     Args:
+        form_data (OAuth2PasswordRequestForm): the form data for the user
     """
     user = authenticate_user(form_data.username, form_data.password)
     if not user:
