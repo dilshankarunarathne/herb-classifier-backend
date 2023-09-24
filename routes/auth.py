@@ -46,6 +46,10 @@ async def register_user(
     The endpoint for registering a new user
 
     Args:
+        username (str): the username of the user
+        email (str): the email of the user
+        password (str): the password of the user
+        is_admin (bool): whether the user is an admin
     """
     if user_exists(username):
         raise HTTPException(
