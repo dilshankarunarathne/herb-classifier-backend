@@ -52,6 +52,8 @@ async def add_new_location(
         lat (float): the latitude of the location
         herb (str): the herb to add the location for
         token (oauth2 bearer token): the token for the user
+
+    Returns:
     if get_current_user(token) is None:
         raise credentials_exception
 
