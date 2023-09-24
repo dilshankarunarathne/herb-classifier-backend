@@ -85,6 +85,7 @@ async def login_for_access_token(
         form_data (OAuth2PasswordRequestForm): the form data for the user
 
     Returns:
+        (dict) The access token for the user
     """
     user = authenticate_user(form_data.username, form_data.password)
     if not user:
