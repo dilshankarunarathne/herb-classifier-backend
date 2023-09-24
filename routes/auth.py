@@ -61,6 +61,7 @@ async def login_for_access_token(
 ):
     """
     The endpoint for logging in a user
+    
     user = authenticate_user(form_data.username, form_data.password)
     if not user:
         raise HTTPException(
