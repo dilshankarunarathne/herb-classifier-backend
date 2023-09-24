@@ -35,6 +35,7 @@ async def register_user(
     :param email: the email of the new user
     :param password: the password of the new user
     :param is_admin: whether the new user is an admin or not (default: False)
+    
     """
     if user_exists(username):
         raise HTTPException(
