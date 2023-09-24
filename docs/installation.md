@@ -8,6 +8,7 @@ You can find the `herb.sql` file in the `resources` directory of the project.
 1. Install the dependencies using `requirements.txt` file.
 
 ```
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 2. 
 
