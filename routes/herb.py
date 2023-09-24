@@ -25,6 +25,7 @@ async def search_herb_by_disease(
     The endpoint for searching a herb by disease
     :param disease: the disease to search for
     :param token: the token of the user
+    :return: the herb details
     if get_current_user(token) is None:
         raise credentials_exception
 
