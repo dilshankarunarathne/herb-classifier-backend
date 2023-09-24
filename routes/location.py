@@ -14,7 +14,7 @@ router = APIRouter(
 )
 
 
-@router.post()
+@router.post("")
 async def add_new_location(
     lon: float = Form(...),
     lat: float = Form(...),
