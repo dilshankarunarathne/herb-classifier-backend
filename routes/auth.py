@@ -114,6 +114,8 @@ async def logout(token: str = Depends(oauth2_scheme)):
 
     Args:
         token (oauth2 bearer token): the token for the user
+
+    Returns:
     """
     blacklist_token(token)
     return {"message": "Successfully logged out"}
