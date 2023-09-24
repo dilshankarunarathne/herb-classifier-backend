@@ -53,7 +53,8 @@ async def register_user(
 
     Returns:
         (UserInDB) The user that was registered
-        
+
+    Raises:
     """
     if user_exists(username):
         raise HTTPException(
