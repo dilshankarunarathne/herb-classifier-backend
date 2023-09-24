@@ -30,6 +30,7 @@ async def register_user(
         is_admin=False
 ):
     """
+    
     """
     if user_exists(username):
         raise HTTPException(
