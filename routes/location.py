@@ -20,3 +20,4 @@ async def add_new_location(
     herb: str = Form(...),
     token: str = Depends(oauth2_scheme)
 ):
+    
