@@ -58,6 +58,7 @@ async def add_new_location(
 
     Raises:
         HTTPException: if the user is not logged in
+    """
     if get_current_user(token) is None:
         raise credentials_exception
 
