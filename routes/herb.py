@@ -22,6 +22,7 @@ async def search_herb_by_disease(
         token: str = Depends(oauth2_scheme)
 ):
     """
+    The endpoint for searching a herb by disease
     if get_current_user(token) is None:
         raise credentials_exception
 
