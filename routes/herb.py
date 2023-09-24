@@ -25,7 +25,7 @@ async def search_herb_by_disease(
     return get_herb_by_disease(disease)
 
 
-@router.post("search-diseases")
+@router.post("/search-diseases")
 async def search_herb_by_disease(
         herb: str = Form(...),
         token: str = Depends(oauth2_scheme)
