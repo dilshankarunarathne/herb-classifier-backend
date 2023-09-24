@@ -26,4 +26,4 @@ async def add_new_location(
 
     add_location(lon, lat, herb)
 
-    return 
+    return {"message": "Successfully added new location"}
