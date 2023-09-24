@@ -53,6 +53,9 @@ async def search_herb_by_disease(
     """
     The endpoint for searching a disease by herb
 
+    Args:
+        herb (str): the herb to search for
+        token (oauth2 bearer token): the token for the user
     if get_current_user(token) is None:
         raise credentials_exception
 
