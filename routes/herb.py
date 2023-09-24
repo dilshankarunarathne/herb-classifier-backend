@@ -4,9 +4,7 @@ from auth.authorize import oauth2_scheme, get_current_user, credentials_exceptio
 from services.herb_service import get_herb_by_disease, get_disease_by_herb
 
 """
-    routers for herbs
-    search_herb_by_disease: search for a herb by disease (POST)  /api/herb/search-herbs  (form-data) disease
-    search_disease_by_herb: search for a disease by herb (POST)  /api/herb/search-diseases  (form-data) herb
+    API router for herb endpoint
 """
 
 router = APIRouter(
