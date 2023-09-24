@@ -12,7 +12,8 @@ from auth.hashing import get_password_hash, ACCESS_TOKEN_EXPIRE_MINUTES, create_
 from services.user_service import user_exists, get_next_avail_id, add_new_user
 
 """
-    routers for authentication
+    routers for authentication.
+    
 """
 
 router = APIRouter(
