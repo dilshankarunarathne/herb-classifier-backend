@@ -12,7 +12,7 @@ plugins:
 
 nav:
   - Documentation: index.md
-  - Tutorial: tutorials.md
+  - Tutorials: tutorials.md
   - how-to-guides.md
   - reference.md
   - explanation.md
