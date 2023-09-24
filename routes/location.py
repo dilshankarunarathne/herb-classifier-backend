@@ -26,6 +26,8 @@ async def get_location_for_herb(
     :param herb: the herb to search for
     :param token: the token of the user
     :return: the location details
+    :raises HTTPException: if the user is not logged in
+    """
     if get_current_user(token) is None:
         raise credentials_exception
 
