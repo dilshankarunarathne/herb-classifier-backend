@@ -3,6 +3,6 @@ from pydantic import BaseModel
 
 class Location(BaseModel):
     id: int
-    lon: float
-    lat: float
+    lon: str
+    lat: str
     herb: str
