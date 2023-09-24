@@ -5,6 +5,8 @@ from services.disease_service import get_disease_details
 
 """
     API router for disease endpoint
+
+    Attributes:
 """
 
 router = APIRouter(
