@@ -6,7 +6,7 @@ from services.location_service import add_location, get_location
 """
     API router for location endpoint 
     get_location_for_herb: get location for a herb (POST)  /api/location/get-location  (form-data) herb
-    add_new_location: add a new location (POST)  /api/location/add-location  (form-data) lon, lat, herb
+    add_new_location: add a new location (POST)  /api/location/add-location  (form-data) lon, lat, herb 
 """
 
 router = APIRouter(
