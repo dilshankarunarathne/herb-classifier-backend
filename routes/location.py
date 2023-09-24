@@ -14,7 +14,7 @@ router = APIRouter(
 )
 
 
-@router.post()
+@router.post("/")
 async def get_location_for_herb(
     herb: str = Form(...),
     token: str = Depends(oauth2_scheme)
