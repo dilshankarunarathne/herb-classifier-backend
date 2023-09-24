@@ -11,6 +11,8 @@ from services.disease_service import get_disease_details
 
     Methods:
         search_disease: the endpoint for searching a disease
+
+    Raises:
 """
 
 router = APIRouter(
