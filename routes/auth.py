@@ -52,6 +52,7 @@ async def register_user(
         is_admin (bool): whether the user is an admin
 
     Returns:
+        (UserInDB) The user that was registered
     """
     if user_exists(username):
         raise HTTPException(
