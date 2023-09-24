@@ -37,6 +37,7 @@ async def search_herb_by_disease(
         token (oauth2 bearer token): the token for the user
 
     Returns:
+        The herb for the disease
     """
     if get_current_user(token) is None:
         raise credentials_exception
