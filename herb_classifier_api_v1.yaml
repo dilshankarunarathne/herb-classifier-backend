@@ -1,0 +1,56 @@
+openapi: "3.0.3"
+info:
+  title: "herb_classifier_api API"
+  description: "herb_classifier_api API"
+  version: "1.0.0"
+servers:
+  - url: "https://herb_classifier_api"
+paths:
+  /register:
+    post:
+      summary: "POST register"
+      responses:
+        "200":
+          description: "OK"
+  /logout:
+    post:
+      summary: "POST logout"
+      responses:
+        "200":
+          description: "OK"
+  /login:
+    post:
+      summary: "POST login"
+      responses:
+        "200":
+          description: "OK"
+  /search-herbs:
+    post:
+      summary: "POST search-herbs"
+      responses:
+        "200":
+          description: "OK"
+  /search-diseases:
+    post:
+      summary: "POST search-diseases"
+      responses:
+        "200":
+          description: "OK"
+  /search:
+    post:
+      summary: "POST search"
+      responses:
+        "200":
+          description: "OK"
+  /add-location:
+    post:
+      summary: "POST add-location"
+      responses:
+        "200":
+          description: "OK"
+  /get-location:
+    post:
+      summary: "POST get-location"
+      responses:
+        "200":
+          description: "OK"
