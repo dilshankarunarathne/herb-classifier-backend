@@ -87,5 +87,7 @@ async def logout(token: str = Depends(oauth2_scheme)):
     """
     The endpoint for logging out a user
     :param token: the token of the user to log out
+    :return: a message stating the user has been logged out
+    """
     blacklist_token(token)
     return {"message": "Successfully logged out"}
