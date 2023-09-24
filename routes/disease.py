@@ -38,6 +38,8 @@ async def search_disease(
 
     Returns:
         (str) The disease details
+
+    Raises:
     """
     if get_current_user(token) is None:
         raise credentials_exception
