@@ -10,7 +10,11 @@ from services.location_service import add_location, get_location
         router (APIRouter): the router for the endpoint
 
     Methods:
-       
+        [POST] /api/location/get-location
+        get_location_for_herb: the endpoint for getting location for a herb
+
+        [POST] /api/location/add-location
+        add_new_location: the endpoint for adding a new location for a herb
 
     Raises:
         HTTPException: if the user is not logged in
