@@ -8,6 +8,7 @@ from services.disease_service import get_disease_details
 
     Attributes:
         router (APIRouter): the router for the endpoint
+        
 """
 
 router = APIRouter(
