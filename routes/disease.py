@@ -22,6 +22,7 @@ async def search_disease(
     """
     The endpoint for searching a disease
     :param disease: the disease to search for
+    
     if get_current_user(token) is None:
         raise credentials_exception
 
