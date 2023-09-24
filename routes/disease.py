@@ -22,6 +22,6 @@ async def search_disease(
     if get_current_user(token) is None:
         raise credentials_exception
 
-    
+    # TODO jsonify the data
 
     return get_disease_details(disease)
