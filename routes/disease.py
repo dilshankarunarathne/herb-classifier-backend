@@ -10,8 +10,9 @@ from services.disease_service import get_disease_details
         router (APIRouter): the router for the endpoint
 
     Methods:
-        search_disease: the endpoint for searching a disease
+    
         [POST] /api/disease/search
+        search_disease: the endpoint for searching a disease
 
     Raises:
         HTTPException: if the user is not logged in
