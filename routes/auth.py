@@ -44,6 +44,7 @@ async def register_user(
 ):
     """
     The endpoint for registering a new user
+    
     """
     if user_exists(username):
         raise HTTPException(
