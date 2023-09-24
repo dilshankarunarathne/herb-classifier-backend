@@ -8,6 +8,8 @@ from services.location_service import add_location, get_location
     
     Attributes:
         router (APIRouter): the router for the endpoint
+
+    Methods:
 """
 
 router = APIRouter(
