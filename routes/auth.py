@@ -15,7 +15,7 @@ from services.user_service import user_exists, get_next_avail_id, add_new_user
     routers for authentication.
     register_user: register a new user  (POST)  /api/auth/register  (form-data) username, email, password   
     login_for_access_token: login a user (POST)  /api/auth/login  (form-data) username, password
-    
+    logout: logout a user (POST)  /api/auth/logout  (form-data) token
 """
 
 router = APIRouter(
