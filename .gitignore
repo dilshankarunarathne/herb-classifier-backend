@@ -154,3 +154,4 @@ cython_debug/
 #.idea/
 #bin/classifier_sequential.h5
 classifier/test.png
+bin/classifier_sequential.h5
