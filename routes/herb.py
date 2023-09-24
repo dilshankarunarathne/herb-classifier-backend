@@ -10,8 +10,7 @@ from services.herb_service import get_herb_by_disease, get_disease_by_herb
         router (APIRouter): the router for the endpoint
 
     Methods:
-        search_herb_by_disease: the endpoint for searching a herb by disease
-        search_herb_by_disease: the endpoint for searching a disease by herb
+        
 
     Raises:
         HTTPException: if the user is not logged in
