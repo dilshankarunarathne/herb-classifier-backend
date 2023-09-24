@@ -14,6 +14,7 @@ from services.location_service import add_location, get_location
         add_new_location: the endpoint for adding a new location for a herb
 
     Raises:
+        HTTPException: if the user is not logged in
 """
 
 router = APIRouter(
