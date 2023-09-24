@@ -22,3 +22,5 @@ async def add_new_location(
 ):
     if get_current_user(token) is None:
         raise credentials_exception
+
+    
