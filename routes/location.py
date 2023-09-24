@@ -36,7 +36,7 @@ async def get_location_for_herb(
         token (oauth2 bearer token): the token for the user
 
     Returns:
-        The location for the herb
+        (str) The location for the herb
 
     Raises:
         HTTPException: if the user is not logged in
