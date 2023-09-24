@@ -12,4 +12,6 @@ router = APIRouter(
 
 
 @router.post()
-def add_new_location()
+def add_new_location(
+        
+)
