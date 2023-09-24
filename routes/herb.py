@@ -5,7 +5,7 @@ from services.herb_service import get_herb_by_disease, get_disease_by_herb
 
 """
     routers for herbs
-    
+    search_herb_by_disease: search for a herb by disease (POST)  /api/herb/search-herbs  (form-data) disease
 """
 
 router = APIRouter(
