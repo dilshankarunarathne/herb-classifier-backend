@@ -63,7 +63,7 @@ async def add_new_location(
         token (oauth2 bearer token): the token for the user
 
     Returns:
-        A message indicating the success of the operation
+        (str) A message indicating the success of the operation
 
     Raises:
         HTTPException: if the user is not logged in
