@@ -23,6 +23,7 @@ async def get_location_for_herb(
 ):
     """
     The endpoint for getting location for a herb
+    :param herb: the herb to search for
     if get_current_user(token) is None:
         raise credentials_exception
 
