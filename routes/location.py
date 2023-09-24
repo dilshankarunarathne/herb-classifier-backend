@@ -13,5 +13,5 @@ router = APIRouter(
 
 @router.post()
 def add_new_location(
-        
-)
+
+):
