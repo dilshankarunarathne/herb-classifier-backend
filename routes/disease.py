@@ -11,6 +11,7 @@ from services.disease_service import get_disease_details
 
     Methods:
         search_disease: the endpoint for searching a disease
+        [POST] /api/disease/search
 
     Raises:
         HTTPException: if the user is not logged in
