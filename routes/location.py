@@ -25,3 +25,5 @@ async def add_new_location(
         raise credentials_exception
 
     add_location(lon, lat, herb)
+
+    
