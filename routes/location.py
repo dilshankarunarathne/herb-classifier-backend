@@ -16,8 +16,8 @@ router = APIRouter(
 
 @router.post()
 async def get_location_for_herb(
-        
-)
+
+):
 
 
 @router.post("/add-location")
