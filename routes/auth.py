@@ -50,6 +50,7 @@ async def register_user(
         email (str): the email of the user
         password (str): the password of the user
         is_admin (bool): whether the user is an admin
+        
     """
     if user_exists(username):
         raise HTTPException(
