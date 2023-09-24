@@ -1,1 +1,8 @@
 site_name: Herb Classifier API
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: deep-purple
+    accent: deep-orange
