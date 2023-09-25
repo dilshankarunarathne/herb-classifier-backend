@@ -23,7 +23,7 @@ headingLevel: 2
 
 # Authentication
 
-- oAuth2 authentication. 
+- OAuth2 authentication. 
 
     - Flow: Bear Token
 
