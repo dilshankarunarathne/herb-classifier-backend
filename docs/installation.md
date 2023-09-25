@@ -6,7 +6,7 @@
 2. 
 
 3. Create a database for the application with the name `herb` and grant all privileges to a user with the name `root`.  
-4. 
+
 If you want to use a different database name or a different user name, you can change the database configurations in the `config.py` file in the root directory of the project.
 
 1. Import the database dump from `herb.sql` file in the root directory of the project.
