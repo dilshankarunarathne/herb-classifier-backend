@@ -4,7 +4,7 @@ from dao.disease_dao import DiseaseDAO
 dao = DiseaseDAO(
     host=config.get("database", "database.dbname"),
     user=config.get("database", "database.dbname"),
-    password="",
+    password=config.get("database", "database.dbname"),
     database="herb"
 )
 dao.connect()
