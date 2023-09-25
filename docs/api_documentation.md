@@ -1516,7 +1516,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 OAuth2PasswordBearer
 </aside>
 
-## add_new_location_api_location_add_location_post
+## Add New Location
 
 <a id="opIdadd_new_location_api_location_add_location_post"></a>
 
