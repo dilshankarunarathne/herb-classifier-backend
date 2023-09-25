@@ -47,6 +47,7 @@ curl -X POST /api/auth/register \
 
 ```
 
+Curl
 ```http
 POST /api/auth/register HTTP/1.1
 
