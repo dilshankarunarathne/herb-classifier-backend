@@ -1,6 +1,7 @@
+import config
 from dao.disease_dao import DiseaseDAO
 
-dao = DiseaseDAO(host="localhost", user="root", password="", database="herb")
+dao = DiseaseDAO(host=config.get(""), user="root", password="", database="herb")
 dao.connect()
 
 
