@@ -146,6 +146,7 @@ application.
 ## Contributing
 
 Go ahead and check out the GitHub repository if you'd like to contribute to this project. Please check the contribution guidelines for more information.
+[https://github.com/dilshankarunarathne/herb-classifier-backend/](Herb Classifier Backend)
 
 ## License
 
