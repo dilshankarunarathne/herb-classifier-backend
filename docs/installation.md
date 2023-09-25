@@ -6,6 +6,10 @@ You can find the `herb.sql` file in the `resources` directory of the project.
 
 # Get the project
 
+Clone the project from GitHub.
+
+```bash
+
 # Setup the environment
 
 Install the dependencies using `requirements.txt` file.
