@@ -470,6 +470,7 @@ This operation does not require authentication
 
 > Code samples
 
+Curl
 ```shell
 # You can also use wget
 curl -X POST /api/auth/logout \
