@@ -653,7 +653,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 OAuth2PasswordBearer
 </aside>
 
-<h1 id="fastapi-herb">herb</h1>
+<h1 id="fastapi-herb">/herb</h1>
 
 ## search_herb_by_disease_api_herb_search_herbs_post
 
