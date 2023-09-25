@@ -1934,11 +1934,12 @@ or
 |herb|string|true|none|none|
 
 <h2 id="tocS_Body_search_herb_by_disease_api_herb_search_herbs_post">Search Herb by Disease</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemabody_search_herb_by_disease_api_herb_search_herbs_post"></a>
 <a id="schema_Body_search_herb_by_disease_api_herb_search_herbs_post"></a>
 <a id="tocSbody_search_herb_by_disease_api_herb_search_herbs_post"></a>
 <a id="tocsbody_search_herb_by_disease_api_herb_search_herbs_post"></a>
+-->
 
 ```json
 {
