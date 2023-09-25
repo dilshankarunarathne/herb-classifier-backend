@@ -487,6 +487,7 @@ Accept: application/json
 
 ```
 
+JavaScript
 ```javascript
 
 const headers = {
