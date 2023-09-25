@@ -15,6 +15,8 @@ git clone https://github.com/dilshankarunarathne/herb-classifier-backend.git
 And then change the directory to the project root.
 
 ```bash
+cd herb-classifier-backend
+```
 
 # Setup the environment
 
