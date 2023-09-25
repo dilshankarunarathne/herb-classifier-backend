@@ -261,6 +261,7 @@ curl -X POST /api/auth/login \
 
 ```
 
+HTTP
 ```http
 POST /api/auth/login HTTP/1.1
 
