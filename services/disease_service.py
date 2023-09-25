@@ -2,7 +2,7 @@ import config
 from dao.disease_dao import DiseaseDAO
 
 dao = DiseaseDAO(
-    host=config.get("database", "database.dbname"),
+    host=config.get("database", "database.dbhost"),
     user=config.get("database", "database.dbuser"),
     password=config.get("database", "database.dbpassword"),
     database=config.get("database", "database.dbname")
