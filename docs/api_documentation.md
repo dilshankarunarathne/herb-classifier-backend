@@ -1888,7 +1888,7 @@ or
 |email|string|true|none|none|
 |password|string|true|none|none|
 
-<h2 id="tocS_Body_search_disease_api_disease_search_post">Body_search_disease_api_disease_search_post</h2>
+<h2 id="tocS_Body_search_disease_api_disease_search_post">Search Disease</h2>
 <!-- backwards compatibility -->
 <a id="schemabody_search_disease_api_disease_search_post"></a>
 <a id="schema_Body_search_disease_api_disease_search_post"></a>
