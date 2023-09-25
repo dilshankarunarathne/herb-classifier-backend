@@ -1522,6 +1522,7 @@ OAuth2PasswordBearer
 
 > Code samples
 
+Curl
 ```shell
 # You can also use wget
 curl -X POST /api/location/add-location \
