@@ -138,7 +138,7 @@ application.
         ...
 </pre>
 
- - [installation.md](Installation)
+ - [Installation][installation.md]()
  - [api_documentation.md](API Documentation)
  - [tutorials.md](Tutorials)
  - [about.md](About)
