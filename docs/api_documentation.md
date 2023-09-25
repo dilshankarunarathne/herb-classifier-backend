@@ -1299,7 +1299,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 OAuth2PasswordBearer
 </aside>
 
-<h1 id="fastapi-location">location</h1>
+<h1 id="fastapi-location">/location</h1>
 
 ## get_location_for_herb_api_location_get_location_post
 
