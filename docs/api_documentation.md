@@ -1956,11 +1956,12 @@ or
 |disease|string|true|none|none|
 
 <h2 id="tocS_HTTPValidationError">HTTPValidationError</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemahttpvalidationerror"></a>
 <a id="schema_HTTPValidationError"></a>
 <a id="tocShttpvalidationerror"></a>
 <a id="tocshttpvalidationerror"></a>
+-->
 
 ```json
 {
