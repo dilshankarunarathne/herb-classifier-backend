@@ -24,9 +24,7 @@ cd herb-classifier-backend
 
 Visit [https://www.python.org/downloads/release/python-3110/](https://www.python.org/downloads/) to download and install Python 3.11.
 
-
-
-Install the dependencies using `requirements.txt` file.
+2. Install the dependencies using `requirements.txt` file.
 
 ```bash
 pip install -r requirements.txt
