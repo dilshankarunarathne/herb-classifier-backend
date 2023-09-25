@@ -38,6 +38,7 @@ headingLevel: 2
 
 > Code samples
 
+Shell
 ```shell
 # You can also use wget
 curl -X POST /api/auth/register \
