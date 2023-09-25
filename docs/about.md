@@ -30,7 +30,8 @@ and vice-versa.
 
 ## Contributing
 
-If you'd like to contribute to this project, please check the contribution guidelines for more information.
+Go ahead and check out the GitHub repository if you'd like to contribute to this project. Please check the contribution guidelines for more information.
+[Herb Classifier Backend](https://github.com/dilshankarunarathne/herb-classifier-backend/)
 
 ## License
 
