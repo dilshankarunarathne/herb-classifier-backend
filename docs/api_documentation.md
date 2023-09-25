@@ -1756,7 +1756,6 @@ OAuth2PasswordBearer
 
 ```
 
-Body_add_new_location_api_location_add_location_post
 
 ### Properties
 
