@@ -1099,6 +1099,7 @@ curl -X POST /api/disease/search \
 
 ```
 
+HTTP
 ```http
 POST /api/disease/search HTTP/1.1
 
