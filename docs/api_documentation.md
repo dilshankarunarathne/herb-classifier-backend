@@ -1870,6 +1870,7 @@ or
 <a id="tocSbody_register_user_api_auth_register_post"></a>
 <a id="tocsbody_register_user_api_auth_register_post"></a>
 -->
+
 ```json
 {
   "username": "string",
