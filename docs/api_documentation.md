@@ -671,6 +671,7 @@ curl -X POST /api/herb/search-herbs \
 
 ```
 
+HTTP
 ```http
 POST /api/herb/search-herbs HTTP/1.1
 
