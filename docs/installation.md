@@ -12,7 +12,7 @@ CREATE DATABASE herb;
 If you want to use a different database name or a different user name, you can change the database configurations in the `config.py` file in the root directory of the project.
 
 3. Import the database dump from `herb.sql` file in the root directory of the project.
-You can find the `herb.sql` file in the `resources` directory of the project.
+You can find the `herb.sql` file in the  directory of the project.
 
 # Get the project
 
