@@ -270,6 +270,7 @@ Accept: application/json
 
 ```
 
+JavaScript
 ```javascript
 const inputBody = '{
   "grant_type": "string",
