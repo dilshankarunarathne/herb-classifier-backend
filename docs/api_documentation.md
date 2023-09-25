@@ -82,6 +82,7 @@ fetch('/api/auth/register',
 
 ```
 
+Ruby 
 ```ruby
 require 'rest-client'
 require 'json'
