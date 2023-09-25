@@ -1,5 +1,5 @@
 ---
-title: Herb Classifier API
+title: Herb Classifier API v1.2
 language_tabs:
   - shell: Shell
   - http: HTTP
