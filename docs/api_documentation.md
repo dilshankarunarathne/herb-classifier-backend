@@ -655,7 +655,7 @@ OAuth2PasswordBearer
 
 <h1 id="fastapi-herb">/herb</h1>
 
-## search_herb_by_disease_api_herb_search_herbs_post
+## Search Herb by Disease
 
 <a id="opIdsearch_herb_by_disease_api_herb_search_herbs_post"></a>
 
