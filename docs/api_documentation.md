@@ -1301,7 +1301,7 @@ OAuth2PasswordBearer
 
 <h1 id="fastapi-location">/location</h1>
 
-## get_location_for_herb_api_location_get_location_post
+## Get Location for Herb
 
 <a id="opIdget_location_for_herb_api_location_get_location_post"></a>
 
