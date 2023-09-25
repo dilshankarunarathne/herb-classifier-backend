@@ -574,6 +574,7 @@ try {
 
 ```
 
+Java
 ```java
 URL obj = new URL("/api/auth/logout");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
