@@ -11,7 +11,7 @@ from services.token_service import add_token_to_blacklist, check_if_token_is_bla
 """
 
 SECRET_KEY = config.get("security", "security.secretkey")
-ALGORITHM = "HS256"
+ALGORITHM = config.get("security", "security.algorithm")
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
