@@ -893,6 +893,7 @@ Accept: application/json
 
 ```
 
+JavaScript
 ```javascript
 const inputBody = '{
   "herb": "string"
