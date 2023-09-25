@@ -1879,7 +1879,6 @@ or
 
 ```
 
-Body_register_user_api_auth_register_post
 
 ### Properties
 
