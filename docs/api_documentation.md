@@ -447,7 +447,7 @@ client_secret: string
 > 200 Response
 
 ```json
-null
+token: <Bearer Token>
 ```
 
 <h3 id="login_for_access_token_api_auth_login_post-responses">Responses</h3>
