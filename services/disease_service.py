@@ -5,7 +5,7 @@ dao = DiseaseDAO(
     host=config.get("database", "database.dbname"),
     user=config.get("database", "database.dbname"),
     password=config.get("database", "database.dbname"),
-    database="herb"
+    database=config.get("database", "database.dbname")
 )
 dao.connect()
 
