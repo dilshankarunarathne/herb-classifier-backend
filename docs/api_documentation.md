@@ -1904,7 +1904,6 @@ or
 
 ```
 
-Body_search_disease_api_disease_search_post
 
 ### Properties
 
