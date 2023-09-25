@@ -986,6 +986,7 @@ try {
 
 ```
 
+Java
 ```java
 URL obj = new URL("/api/herb/search-diseases");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
