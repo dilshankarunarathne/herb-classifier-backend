@@ -464,7 +464,7 @@ token: <Bearer Token>
 This operation does not require authentication
 </aside>
 
-## logout_api_auth_logout_post
+## User Logout
 
 <a id="opIdlogout_api_auth_logout_post"></a>
 
