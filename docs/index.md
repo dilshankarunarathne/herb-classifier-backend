@@ -141,7 +141,7 @@ application.
  - [Installation](installation.md)
  - [API Documentation](api_documentation.md)
  - [Tutorials](tutorials.md)
- - [about.md](About)
+ - [About]()
 
 ## Contributing
 
