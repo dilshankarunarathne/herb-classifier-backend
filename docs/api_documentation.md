@@ -1108,6 +1108,7 @@ Accept: application/json
 
 ```
 
+JavaScript
 ```javascript
 const inputBody = '{
   "disease": "string"
