@@ -81,7 +81,12 @@ application. It has OAuth2 authentication and JWT token generation.
 │           ...
 │
 ├───services
-│   │   ...
+│   │   disease_service.py
+│   │   herb_service.py
+│   │   location_service.py
+│   │   token_service.py
+│   │   user_service.py
+│   │   __init__.py
 │   │
 │   └───__pycache__
 │           ...
