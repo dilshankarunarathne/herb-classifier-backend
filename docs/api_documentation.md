@@ -1532,6 +1532,7 @@ curl -X POST /api/location/add-location \
 
 ```
 
+
 ```http
 POST /api/location/add-location HTTP/1.1
 
