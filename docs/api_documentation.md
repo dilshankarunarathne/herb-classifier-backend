@@ -850,7 +850,7 @@ disease: string
 > 200 Response
 
 ```json
-null
+{HERB1, HERB2}
 ```
 
 <h3 id="search_herb_by_disease_api_herb_search_herbs_post-responses">Responses</h3>
