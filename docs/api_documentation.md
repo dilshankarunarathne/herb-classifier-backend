@@ -1806,8 +1806,6 @@ OAuth2PasswordBearer
 
 ```
 
-Body_login_for_access_token_api_auth_login_post
-
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
