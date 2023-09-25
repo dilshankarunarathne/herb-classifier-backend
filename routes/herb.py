@@ -42,7 +42,7 @@ async def search_herb_by_disease(
     Returns:
         (str) The herb for the disease
     """
-    if get_current_user(token) is None:
+    if await get_current_user(token) is None:
         raise credentials_exception
 
     return get_herb_by_disease(disease)
