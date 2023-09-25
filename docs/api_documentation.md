@@ -440,7 +440,7 @@ client_secret: string
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[Body_login_for_access_token_api_auth_login_post](#schemabody_login_for_access_token_api_auth_login_post)|true|none|
+
 
 > Example responses
 
