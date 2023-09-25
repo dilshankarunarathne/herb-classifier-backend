@@ -12,7 +12,9 @@ Clone the project from GitHub.
 git clone https://github.com/dilshankarunarathne/herb-classifier-backend.git
 ```
 
-And
+And then change the directory to the project root.
+
+```bash
 
 # Setup the environment
 
