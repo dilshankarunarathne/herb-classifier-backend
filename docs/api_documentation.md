@@ -1351,6 +1351,7 @@ fetch('/api/location/get-location',
 
 ```
 
+Ruby
 ```ruby
 require 'rest-client'
 require 'json'
