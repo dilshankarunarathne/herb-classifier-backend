@@ -145,7 +145,7 @@ application.
 
 ## Contributing
 
-If you'd like to contribute to this project, please check the contribution guidelines for more information.
+Go ahead and check out the GitHub repository 
 
 ## License
 
