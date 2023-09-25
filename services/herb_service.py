@@ -1,3 +1,4 @@
+from config import config
 from dao.herb_dao import HerbDAO
 
 dao = HerbDAO(
