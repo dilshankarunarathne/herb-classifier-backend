@@ -30,7 +30,7 @@ headingLevel: 2
     - Token URL = [http://127.0.0.1:8000/auth/login](http://127.0.0.1:8000/auth/login)
 
 
-<h1 id="fastapi-auth">auth</h1>
+<h1 id="fastapi-auth">/auth</h1>
 
 ## register_user_api_auth_register_post
 
