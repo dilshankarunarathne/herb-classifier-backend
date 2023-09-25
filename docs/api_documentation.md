@@ -1926,7 +1926,6 @@ or
 
 ```
 
-Body_search_herb_by_disease_api_herb_search_diseases_post
 
 ### Properties
 
