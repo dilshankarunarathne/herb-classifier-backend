@@ -1786,7 +1786,7 @@ OAuth2PasswordBearer
 |---|---|---|---|---|
 |herb|string|true|none|none|
 
-<h2 id="tocS_Body_login_for_access_token_api_auth_login_post">Login</h2>
+<h2 id="tocS_Body_login_for_access_token_api_auth_login_post">User Login</h2>
 <!-- backwards compatibility 
 <a id="schemabody_login_for_access_token_api_auth_login_post"></a>
 <a id="schema_Body_login_for_access_token_api_auth_login_post"></a>
