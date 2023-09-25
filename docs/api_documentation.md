@@ -1056,7 +1056,7 @@ herb: string
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[Body_search_herb_by_disease_api_herb_search_diseases_post](#schemabody_search_herb_by_disease_api_herb_search_diseases_post)|true|none|
+
 
 > Example responses
 
