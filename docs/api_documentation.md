@@ -1948,7 +1948,6 @@ or
 
 ```
 
-Body_search_herb_by_disease_api_herb_search_herbs_post
 
 ### Properties
 
