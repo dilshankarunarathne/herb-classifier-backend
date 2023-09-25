@@ -3,9 +3,7 @@
 1. Install MySQL (version 5.7.31 is recommended)  
 [WAMP](https://sourceforge.net/projects/wampserver) or [XAMPP](https://www.apachefriends.org/download.html) can be used to install MySQL on Windows.
 
-1. 
-
-2. Create a database for the application with the name `herb` and grant all privileges to a user with the name `root`.
+1. Create a database for the application with the name `herb` and grant all privileges to a user with the name `root`.
 
 ```mysql
 CREATE DATABASE herb;
