@@ -4,7 +4,7 @@ The server side application including the RestAPI with FastAPI and the ML models
 application. It has OAuth2 authentication and JWT token generation. 
 
 ## Project layout
-
+<pre>
 │   .gitattributes
 │   .gitignore
 │   application.properties
@@ -132,3 +132,4 @@ application. It has OAuth2 authentication and JWT token generation.
 │
 └───__pycache__
         ...
+</pre>
