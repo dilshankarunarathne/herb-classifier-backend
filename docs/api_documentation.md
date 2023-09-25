@@ -1890,11 +1890,12 @@ or
 |password|string|true|none|none|
 
 <h2 id="tocS_Body_search_disease_api_disease_search_post">Search Disease</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemabody_search_disease_api_disease_search_post"></a>
 <a id="schema_Body_search_disease_api_disease_search_post"></a>
 <a id="tocSbody_search_disease_api_disease_search_post"></a>
 <a id="tocsbody_search_disease_api_disease_search_post"></a>
+-->
 
 ```json
 {
