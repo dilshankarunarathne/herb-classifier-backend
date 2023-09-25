@@ -1281,7 +1281,7 @@ disease: string
 > 200 Response
 
 ```json
-null
+{id, disease, symptoms, herb}
 ```
 
 <h3 id="search_disease_api_disease_search_post-responses">Responses</h3>
