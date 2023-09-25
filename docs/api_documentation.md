@@ -1766,11 +1766,12 @@ OAuth2PasswordBearer
 |herb|string|true|none|none|
 
 <h2 id="tocS_Body_get_location_for_herb_api_location_get_location_post">Get Location for Herb</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemabody_get_location_for_herb_api_location_get_location_post"></a>
 <a id="schema_Body_get_location_for_herb_api_location_get_location_post"></a>
 <a id="tocSbody_get_location_for_herb_api_location_get_location_post"></a>
 <a id="tocsbody_get_location_for_herb_api_location_get_location_post"></a>
+-->
 
 ```json
 {
