@@ -1911,7 +1911,7 @@ or
 |---|---|---|---|---|
 |disease|string|true|none|none|
 
-<h2 id="tocS_Body_search_herb_by_disease_api_herb_search_diseases_post">Body_search_herb_by_disease_api_herb_search_diseases_post</h2>
+<h2 id="tocS_Body_search_herb_by_disease_api_herb_search_diseases_post">Search Herb by Disease</h2>
 <!-- backwards compatibility -->
 <a id="schemabody_search_herb_by_disease_api_herb_search_diseases_post"></a>
 <a id="schema_Body_search_herb_by_disease_api_herb_search_diseases_post"></a>
