@@ -1654,6 +1654,7 @@ System.out.println(response.toString());
 
 ```
 
+Go
 ```go
 package main
 
@@ -1711,7 +1712,7 @@ herb: string
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[Body_add_new_location_api_location_add_location_post](#schemabody_add_new_location_api_location_add_location_post)|true|none|
+
 
 > Example responses
 
