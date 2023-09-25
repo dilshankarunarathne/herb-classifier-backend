@@ -1541,6 +1541,7 @@ Accept: application/json
 
 ```
 
+JavaScript
 ```javascript
 const inputBody = '{
   "lon": 0,
