@@ -38,7 +38,7 @@ headingLevel: 2
 
 > Code samples
 
-Shell
+Curl
 ```shell
 # You can also use wget
 curl -X POST /api/auth/register \
@@ -47,7 +47,7 @@ curl -X POST /api/auth/register \
 
 ```
 
-Curl
+HTTP
 ```http
 POST /api/auth/register HTTP/1.1
 
