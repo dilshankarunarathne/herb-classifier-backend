@@ -56,6 +56,7 @@ Accept: application/json
 
 ```
 
+JavaScript
 ```javascript
 const inputBody = '{
   "username": "string",
