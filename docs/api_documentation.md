@@ -1740,11 +1740,12 @@ OAuth2PasswordBearer
 # Schemas
 
 <h2 id="tocS_Body_add_new_location_api_location_add_location_post">Add new Location</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemabody_add_new_location_api_location_add_location_post"></a>
 <a id="schema_Body_add_new_location_api_location_add_location_post"></a>
 <a id="tocSbody_add_new_location_api_location_add_location_post"></a>
 <a id="tocsbody_add_new_location_api_location_add_location_post"></a>
+-->
 
 ```json
 {
