@@ -1491,7 +1491,7 @@ herb: string
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[Body_get_location_for_herb_api_location_get_location_post](#schemabody_get_location_for_herb_api_location_get_location_post)|true|none|
+
 
 > Example responses
 
