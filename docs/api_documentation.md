@@ -1780,8 +1780,6 @@ OAuth2PasswordBearer
 
 ```
 
-Body_get_location_for_herb_api_location_get_location_post
-
 ### Properties
 
 |Name|Type|Required|Restrictions|Description|
