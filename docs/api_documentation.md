@@ -223,7 +223,6 @@ password: string
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |is_admin|query|any|false|none|
-|body|body|[Body_register_user_api_auth_register_post](#schemabody_register_user_api_auth_register_post)|true|none|
 
 > Example responses
 
