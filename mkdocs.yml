@@ -4,8 +4,8 @@ theme:
   name: material
   language: en
   palette:
-    primary: 
-    accent: deep-orange
+    primary: green
+    accent: yellow
 
 plugins:
   - mkdocstrings
