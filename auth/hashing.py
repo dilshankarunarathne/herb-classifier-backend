@@ -10,7 +10,7 @@ from services.token_service import add_token_to_blacklist, check_if_token_is_bla
     middleware for hashing passwords and creating tokens
 """
 
-SECRET_KEY = config.get()
+SECRET_KEY = config.get("security", "")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
