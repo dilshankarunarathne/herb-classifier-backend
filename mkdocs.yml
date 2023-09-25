@@ -4,7 +4,7 @@ theme:
   name: material
   language: en
   palette:
-    primary: deep-purple
+    primary: 
     accent: deep-orange
 
 plugins:
