@@ -3,7 +3,8 @@ from dao.disease_dao import DiseaseDAO
 
 dao = DiseaseDAO(
     host=config.get("database", "database.dbname"),
-    user="root", password="", database="herb")
+    user="root",
+    password="", database="herb")
 dao.connect()
 
 
