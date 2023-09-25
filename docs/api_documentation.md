@@ -884,6 +884,7 @@ curl -X POST /api/herb/search-diseases \
 
 ```
 
+HTTP
 ```http
 POST /api/herb/search-diseases HTTP/1.1
 
