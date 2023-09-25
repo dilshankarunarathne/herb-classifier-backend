@@ -44,7 +44,7 @@ async def get_location_for_herb(
     Raises:
         HTTPException: if the user is not logged in
     """
-    if get_current_user(token) is None:
+    if await get_current_user(token) is None:
         raise credentials_exception
 
     return get_location(herb)
