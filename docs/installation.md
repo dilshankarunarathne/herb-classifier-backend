@@ -20,7 +20,8 @@ cd herb-classifier-backend
 
 # Setup the environment
 
-
+1. Install Python 3.11
+2. 
 
 Install the dependencies using `requirements.txt` file.
 
