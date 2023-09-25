@@ -773,6 +773,7 @@ try {
 
 ```
 
+Java
 ```java
 URL obj = new URL("/api/herb/search-herbs");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
