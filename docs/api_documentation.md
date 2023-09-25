@@ -1864,12 +1864,12 @@ or
 |» *anonymous*|null|false|none|none|
 
 <h2 id="tocS_Body_register_user_api_auth_register_post">User Register</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemabody_register_user_api_auth_register_post"></a>
 <a id="schema_Body_register_user_api_auth_register_post"></a>
 <a id="tocSbody_register_user_api_auth_register_post"></a>
 <a id="tocsbody_register_user_api_auth_register_post"></a>
-
+-->
 ```json
 {
   "username": "string",
