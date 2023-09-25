@@ -4,7 +4,20 @@ from auth.authorize import oauth2_scheme, get_current_user, credentials_exceptio
 from services.herb_service import get_herb_by_disease, get_disease_by_herb
 
 """
-    routers for herbs
+    API router for herb endpoint
+
+    Attributes:
+        router (APIRouter): the router for the endpoint
+
+    Methods:
+        [POST] /api/herb/search-herbs
+        search_herb_by_disease: the endpoint for searching a herb by disease
+
+        [POST] /api/herb/search-diseases
+        search_herb_by_disease: the endpoint for searching a disease by herb
+
+    Raises:
+        HTTPException: if the user is not logged in
 """
 
 router = APIRouter(
@@ -19,7 +32,17 @@ async def search_herb_by_disease(
         disease: str = Form(...),
         token: str = Depends(oauth2_scheme)
 ):
-    if get_current_user(token) is None:
+    """
+    The endpoint for searching a herb by disease
+
+    Args:
+        disease (str): the disease to search for
+        token (oauth2 bearer token): the token for the user
+
+    Returns:
+        (str) The herb for the disease
+    """
+    if await get_current_user(token) is None:
         raise credentials_exception
 
     return get_herb_by_disease(disease)
@@ -30,7 +53,17 @@ async def search_herb_by_disease(
         herb: str = Form(...),
         token: str = Depends(oauth2_scheme)
 ):
-    if get_current_user(token) is None:
+    """
+    The endpoint for searching a disease by herb
+
+    Args:
+        herb (str): the herb to search for
+        token (oauth2 bearer token): the token for the user
+
+    Returns:
+        (str) The disease for the herb
+    """
+    if await get_current_user(token) is None:
         raise credentials_exception
 
     return get_disease_by_herb(herb)

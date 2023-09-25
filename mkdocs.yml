@@ -1,0 +1,18 @@
+site_name: Herb Classifier API
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: deep-purple
+    accent: deep-orange
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Documentation: index.md
+  - Getting Started: getting_started.md
+  - Installation: installation.md
+  - Tutorials: tutorials.md
+  - About: about.md

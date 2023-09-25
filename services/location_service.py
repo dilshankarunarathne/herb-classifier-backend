@@ -1,6 +1,12 @@
+from config import config
 from dao.location_dao import LocationDAO
 
-dao = LocationDAO(host="localhost", user="root", password="", database="herb")
+dao = LocationDAO(
+    host=config.get("database", "database.host"),
+    user=config.get("database", "database.user"),
+    password=config.get("database", "database.password"),
+    database=config.get("database", "database.dbname")
+)
 dao.connect()
 
 
