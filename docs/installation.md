@@ -1,7 +1,7 @@
 # Setup MySQL database
 
 1. Install MySQL (version 5.7.31 is recommended)  
-[](https://sourceforge.net/projects/wampserver) or [https://www.apachefriends.org/download.html](XAMPP) can be used to install MySQL on Windows.
+[](https://sourceforge.net/projects/wampserver) or []([XAMPP](https://www.apachefriends.org/download.html)) can be used to install MySQL on Windows.
 
 2. 
 
