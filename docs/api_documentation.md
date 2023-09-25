@@ -146,6 +146,7 @@ try {
 
 ```
 
+Java
 ```java
 URL obj = new URL("/api/auth/register");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
