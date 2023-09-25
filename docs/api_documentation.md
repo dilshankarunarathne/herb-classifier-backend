@@ -1063,7 +1063,7 @@ herb: string
 > 200 Response
 
 ```json
-null
+{disease1, disease2}
 ```
 
 <h3 id="search_herb_by_disease_api_herb_search_diseases_post-responses">Responses</h3>
