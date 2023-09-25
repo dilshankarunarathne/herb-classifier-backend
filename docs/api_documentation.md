@@ -1498,7 +1498,7 @@ herb: string
 > 200 Response
 
 ```json
-null
+{longitude, latitude}
 ```
 
 <h3 id="get_location_for_herb_api_location_get_location_post-responses">Responses</h3>
