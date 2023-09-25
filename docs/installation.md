@@ -4,7 +4,7 @@
 2. Import the database dump from `herb.sql` file in the root directory of the project.
 You can find the `herb.sql` file in the `resources` directory of the project.
 
-
+# Get the project
 
 # Setup the environment
 
