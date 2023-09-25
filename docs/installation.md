@@ -9,6 +9,8 @@ You can find the `herb.sql` file in the `resources` directory of the project.
 Clone the project from GitHub.
 
 ```bash
+git clone https://github.com/dilshankarunarathne/herb-classifier-backend.git
+```
 
 # Setup the environment
 
