@@ -42,7 +42,7 @@ async def search_disease(
     Raises:
         HTTPException: if the user is not logged in
     """
-    if get_current_user(token) is None:
+    if await get_current_user(token) is None:
         raise credentials_exception
 
     # TODO jsonify the data
