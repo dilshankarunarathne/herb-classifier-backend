@@ -636,7 +636,7 @@ Returns:
 > 200 Response
 
 ```json
-null
+message: Logged out successfully
 ```
 
 <h3 id="logout_api_auth_logout_post-responses">Responses</h3>
