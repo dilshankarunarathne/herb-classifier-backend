@@ -1083,7 +1083,7 @@ OAuth2PasswordBearer
 
 <h1 id="fastapi-disease">/disease</h1>
 
-## search_disease_api_disease_search_post
+## Search Disease
 
 <a id="opIdsearch_disease_api_disease_search_post"></a>
 
