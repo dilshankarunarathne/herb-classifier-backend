@@ -1,6 +1,11 @@
 from dao.herb_dao import HerbDAO
 
-dao = HerbDAO(host="localhost", user="root", password="", database="herb")
+dao = HerbDAO(
+    host=config.get("database", "database.host"),
+    user=config.get("database", "database.user"),
+    password=config.get("database", "database.password"),
+    database=config.get("database", "database.dbname")
+)
 dao.connect()
 
 
