@@ -12,6 +12,8 @@ Clone the project from GitHub.
 git clone https://github.com/dilshankarunarathne/herb-classifier-backend.git
 ```
 
+And
+
 # Setup the environment
 
 Install the dependencies using `requirements.txt` file.
