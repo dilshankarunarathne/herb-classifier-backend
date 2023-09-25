@@ -246,7 +246,7 @@ null
 This operation does not require authentication
 </aside>
 
-## login_for_access_token_api_auth_login_post
+## User Login 
 
 <a id="opIdlogin_for_access_token_api_auth_login_post"></a>
 
