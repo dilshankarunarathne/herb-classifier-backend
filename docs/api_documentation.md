@@ -1719,7 +1719,7 @@ herb: string
 > 200 Response
 
 ```json
-null
+message: new location added successfully
 ```
 
 <h3 id="add_new_location_api_location_add_location_post-responses">Responses</h3>
