@@ -1201,6 +1201,7 @@ try {
 
 ```
 
+Java
 ```java
 URL obj = new URL("/api/disease/search");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
