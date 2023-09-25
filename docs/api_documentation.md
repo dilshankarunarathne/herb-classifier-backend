@@ -918,6 +918,7 @@ fetch('/api/herb/search-diseases',
 
 ```
 
+Ruby
 ```ruby
 require 'rest-client'
 require 'json'
