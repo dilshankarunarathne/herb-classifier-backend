@@ -1133,6 +1133,7 @@ fetch('/api/disease/search',
 
 ```
 
+    
 ```ruby
 require 'rest-client'
 require 'json'
