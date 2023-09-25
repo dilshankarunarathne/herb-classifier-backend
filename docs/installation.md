@@ -1,7 +1,7 @@
 # Setup MySQL database
 
 1. Install MySQL (version 5.7.31 is recommended)  
-[https://sourceforge.net/projects/wampserver/](WAMP) or [https://www.apachefriends.org/download.html](XAMPP) can be used to install MySQL on Windows.
+[](https://sourceforge.net/projects/wampserver) or [https://www.apachefriends.org/download.html](XAMPP) can be used to install MySQL on Windows.
 
 2. 
 
@@ -10,7 +10,6 @@
 ```mysql
 CREATE DATABASE herb;
 ```
-
 
 If you want to use a different database name or a different user name, you can change the database configurations in the `config.py` file in the root directory of the project.
 
