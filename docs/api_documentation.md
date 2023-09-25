@@ -299,6 +299,7 @@ fetch('/api/auth/login',
 
 ```
 
+Ruby
 ```ruby
 require 'rest-client'
 require 'json'
