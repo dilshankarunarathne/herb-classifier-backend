@@ -868,7 +868,7 @@ To perform this operation, you must be authenticated by means of one of the foll
 OAuth2PasswordBearer
 </aside>
 
-## search_herb_by_disease_api_herb_search_diseases_post
+## Search Herb by Disease
 
 <a id="opIdsearch_herb_by_disease_api_herb_search_diseases_post"></a>
 
