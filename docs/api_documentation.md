@@ -479,6 +479,7 @@ curl -X POST /api/auth/logout \
 
 ```
 
+HTTP
 ```http
 POST /api/auth/logout HTTP/1.1
 
