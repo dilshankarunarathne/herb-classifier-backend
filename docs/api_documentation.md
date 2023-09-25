@@ -1,5 +1,5 @@
 ---
-title: FastAPI v0.1.0
+title: Herb Classifier API
 language_tabs:
   - shell: Shell
   - http: HTTP
