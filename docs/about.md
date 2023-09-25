@@ -12,9 +12,6 @@ application. It has OAuth2 authentication and JWT token generation.
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
     - [Project Scope](#project-scope)
-  - [Installation](#installation)
-    - [Prerequisites](#prerequisites)
-    - [Installation Steps](#installation-steps)
   - [Contributing](#contributing)
   - [License](#license)
   - [Contact Information](#contact-information)
@@ -40,65 +37,6 @@ application.
 and vice-versa.
 2. The model should at least be able to (trained for) identify three medicinal herbs.
 3. The users should be able to get the locations of which areas the plants would grow, or can be found.
-
-## Installation
-
-### Prerequisites
-
-- Python 3.8 or higher
-- pip 20.0 or higher
-- fastapi
-- uvicorn
-- pydantic
-- jose
-- passlib
-- mysql
-
-### Installation Steps
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/dilshankarunarathne/herb-classifier-backend.git
-```
-
-2. Install the dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Create a MySQL database
-
-```bash
-mysql -u root -p 
-```
-
-```sql
-CREATE DATABASE herbclassifier;
-```
-
-4. Create a `.env` file in the root directory and add the following environment variables
-
-```bash
-MYSQL_USER="your mysql user"
-MYSQL_PASSWORD="your mysql password"
-MYSQL_HOST="localhost"
-MYSQL_DATABASE="herb"
-MYSQL_PORT=3306
-```
-
-5. Run the project
-
-```bash
-uvicorn main:app --reload
-```
-
-6. Open the local URL in a browser to access the Swagger UI
-
-```bash
-http://127.0.0.1:8000/auth/login
-```
 
 ## Contributing
 
