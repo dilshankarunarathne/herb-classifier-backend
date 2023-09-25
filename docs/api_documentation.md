@@ -705,6 +705,7 @@ fetch('/api/herb/search-herbs',
 
 ```
 
+Ruby
 ```ruby
 require 'rest-client'
 require 'json'
