@@ -1987,11 +1987,12 @@ HTTPValidationError
 |detail|[[ValidationError](#schemavalidationerror)]|false|none|none|
 
 <h2 id="tocS_ValidationError">ValidationError</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemavalidationerror"></a>
 <a id="schema_ValidationError"></a>
 <a id="tocSvalidationerror"></a>
 <a id="tocsvalidationerror"></a>
+-->
 
 ```json
 {
