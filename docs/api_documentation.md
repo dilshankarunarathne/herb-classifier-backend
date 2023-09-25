@@ -1787,11 +1787,12 @@ OAuth2PasswordBearer
 |herb|string|true|none|none|
 
 <h2 id="tocS_Body_login_for_access_token_api_auth_login_post">Body_login_for_access_token_api_auth_login_post</h2>
-<!-- backwards compatibility -->
+<!-- backwards compatibility 
 <a id="schemabody_login_for_access_token_api_auth_login_post"></a>
 <a id="schema_Body_login_for_access_token_api_auth_login_post"></a>
 <a id="tocSbody_login_for_access_token_api_auth_login_post"></a>
 <a id="tocsbody_login_for_access_token_api_auth_login_post"></a>
+-->
 
 ```json
 {
