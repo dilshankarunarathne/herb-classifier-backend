@@ -3,13 +3,14 @@ from datetime import datetime, timedelta
 from jose import jwt
 from passlib.context import CryptContext
 
+import config
 from services.token_service import add_token_to_blacklist, check_if_token_is_blacklisted
 
 """
     middleware for hashing passwords and creating tokens
 """
 
-SECRET_KEY = 
+SECRET_KEY = config.get()
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
