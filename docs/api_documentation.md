@@ -32,7 +32,7 @@ headingLevel: 2
 
 <h1 id="fastapi-auth">/auth</h1>
 
-## register_user_api_auth_register_post
+## Register User
 
 <a id="opIdregister_user_api_auth_register_post"></a>
 
