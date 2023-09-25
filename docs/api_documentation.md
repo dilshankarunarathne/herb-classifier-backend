@@ -1274,7 +1274,7 @@ disease: string
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|body|body|[Body_search_disease_api_disease_search_post](#schemabody_search_disease_api_disease_search_post)|true|none|
+
 
 > Example responses
 
