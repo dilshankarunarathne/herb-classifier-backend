@@ -3,7 +3,7 @@
 The server side application including the RestAPI with FastAPI and the ML models for the **Herb Classifier**
 application. It has OAuth2 authentication and JWT token generation. 
 
-[![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
+[![Version](https://img.shields.io/badge/version-1.1-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## Project layout
