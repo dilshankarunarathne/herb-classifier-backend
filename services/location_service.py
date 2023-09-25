@@ -1,3 +1,4 @@
+from config import config
 from dao.location_dao import LocationDAO
 
 dao = LocationDAO(
