@@ -25,12 +25,10 @@ headingLevel: 2
 
 - oAuth2 authentication. 
 
-    - Flow: password
+    - Flow: Bear Token
 
     - Token URL = [http://127.0.0.1:8000/auth/login](http://127.0.0.1:8000/auth/login)
 
-|Scope|Scope Description|
-|---|---|
 
 <h1 id="fastapi-auth">auth</h1>
 
