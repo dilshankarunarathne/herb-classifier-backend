@@ -6,4 +6,4 @@ class Location(BaseModel):
     lon: str
     lat: str
     herb: str
-    
+    added_user: str
