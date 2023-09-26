@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Form, Depends
 
 from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
-from services.disease_service import get_disease_details
+from services.disease_service import get_disease_details, add_disease
 
 """
     API router for disease endpoint
@@ -53,7 +53,7 @@ async def insert_disease(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    if insert_disease(disease, symptoms, treatment) is True:
+    if add_disease(disease, symptoms, treatment) is True:
         return "successfully added new disease"
     else:
         raise ValueError("disease already exists")
