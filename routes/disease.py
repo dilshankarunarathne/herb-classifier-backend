@@ -42,7 +42,7 @@ async def insert_disease(
        disease (str): the disease to search for
        token (oauth2 bearer token): the token for the user
        symptoms (str): disease symptoms
-       treatment
+       treatment (str)
 
     Returns:
        (str) Successfully added new disease details record
