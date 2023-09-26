@@ -23,7 +23,6 @@ router = APIRouter(
     responses={404: {"description": "The requested page was not found"}},
 )
 
-# TODO implement user id on the location table
 # TODO ER
 
 
