@@ -15,6 +15,14 @@ def get_disease_details(disease):
     return symptoms, treatment
 
 
+def insert_disease(disease, symptoms, treatment) -> bool:
+    if get_disease_details(disease) is None:
+        dao.insert_new_disease(disease, symptoms, treatment)
+        return True
+    else:
+        return False
+
+
 def get_all_diseases():
     diseases = dao.get_all()
     return_list = []

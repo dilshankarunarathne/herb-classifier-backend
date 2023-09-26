@@ -6,15 +6,15 @@ application. It has OAuth2 authentication and JWT token generation.
 [![Version](https://img.shields.io/badge/version-1.2-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+[API Documentation - Bump.sh](https://bump.sh/dilshankarunarathne/doc/herb-classifier-api)
+
 ## Table of Contents
 
 - [Herb Classifier Backend](#herb-classifier-backend)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
     - [Project Scope](#project-scope)
-  - [Installation](#installation)
-    - [Prerequisites](#prerequisites)
-    - [Installation Steps](#installation-steps)
+  - [Prerequisites](#prerequisites)
   - [Contributing](#contributing)
   - [License](#license)
   - [Contact Information](#contact-information)
@@ -41,9 +41,7 @@ and vice-versa.
 2. The model should at least be able to (trained for) identify three medicinal herbs.
 3. The users should be able to get the locations of which areas the plants would grow, or can be found.
 
-## Installation
-
-### Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - pip 20.0 or higher
@@ -53,52 +51,6 @@ and vice-versa.
 - jose
 - passlib
 - mysql
-
-### Installation Steps
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/dilshankarunarathne/herb-classifier-backend.git
-```
-
-2. Install the dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Create a MySQL database
-
-```bash
-mysql -u root -p 
-```
-
-```sql
-CREATE DATABASE herbclassifier;
-```
-
-4. Create a `.env` file in the root directory and add the following environment variables
-
-```bash
-MYSQL_USER="your mysql user"
-MYSQL_PASSWORD="your mysql password"
-MYSQL_HOST="localhost"
-MYSQL_DATABASE="herb"
-MYSQL_PORT=3306
-```
-
-5. Run the project
-
-```bash
-uvicorn main:app --reload
-```
-
-6. Open the local URL in a browser to access the Swagger UI
-
-```bash
-http://127.0.0.1:8000/auth/login
-```
 
 ## Contributing
 
