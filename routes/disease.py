@@ -31,7 +31,7 @@ router = APIRouter(
 @router.post("/insert")
 async def insert_disease(
     disease: str = Form(...),
-    symptoms: str = Form()
+    symptoms: str = Form(...),
     token: str = Depends(oauth2_scheme)
 ):
 
