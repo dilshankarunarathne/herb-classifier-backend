@@ -53,7 +53,8 @@ async def insert_disease(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-
+    if insert_disease(disease, symptoms, treatment) is True:
+        
 
 
 @router.post("/search")
