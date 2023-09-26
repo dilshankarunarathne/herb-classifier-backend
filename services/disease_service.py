@@ -11,7 +11,8 @@ dao.connect()
 
 
 def get_disease_details(disease):
-    (disease_id, disease_name, symptoms, treatment) = dao.query_disease(disease)
+    try:
+        (disease_id, disease_name, symptoms, treatment) = dao.query_disease(disease)
     return symptoms, treatment
 
 
