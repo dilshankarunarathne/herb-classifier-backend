@@ -14,7 +14,7 @@ def get_disease_details(disease):
     try:
         (disease_id, disease_name, symptoms, treatment) = dao.query_disease(disease)
         return symptoms, treatment
-    except TypeError as err:
+    except TypeError:
         return None
 
 
