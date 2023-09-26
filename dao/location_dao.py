@@ -52,7 +52,7 @@ class LocationDAO:
         add_user = ("INSERT INTO location "
                     "(lon, lat, herb) "
                     "VALUES (%s, %s, %s, %s)")
-        data = (lon, lat, herb)
+        data = (lon, lat, herb, added_user)
         cursor.execute(add_user, data)
         self.cnx.commit()
         cursor.close()
