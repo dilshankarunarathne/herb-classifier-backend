@@ -15,6 +15,9 @@ def get_disease_details(disease):
     return symptoms, treatment
 
 
+
+
+
 def get_all_diseases():
     diseases = dao.get_all()
     return_list = []
