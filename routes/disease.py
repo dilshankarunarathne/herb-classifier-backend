@@ -29,7 +29,7 @@ router = APIRouter(
 
 # TODO implement insert
 @router.post("/insert")
-async defusedxml
+async def insert_disease()
 
 
 @router.post("/search")
