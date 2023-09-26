@@ -16,7 +16,7 @@ def get_disease_details(disease):
 
 
 def insert_disease(disease, symptoms, treatment):
-    dao.insert_new_disease()
+    dao.insert_new_disease(disease, symptoms, treatment)
 
 
 def get_all_diseases():
