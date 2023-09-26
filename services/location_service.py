@@ -10,7 +10,7 @@ dao = LocationDAO(
 dao.connect()
 
 
-def add_location(lon, lat, herb):
+def add_location(lon, lat, herb, added_user):
     dao.add_location(lon, lat, herb, added_user)
 
 
