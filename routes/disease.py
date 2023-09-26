@@ -54,6 +54,8 @@ async def insert_disease(
         raise credentials_exception
 
 
+
+
 @router.post("/search")
 async def search_disease(
     disease: str = Form(...),
