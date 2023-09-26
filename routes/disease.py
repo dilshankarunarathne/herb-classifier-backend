@@ -43,7 +43,7 @@ async def insert_disease(
        token (oauth2 bearer token): the token for the user
 
     Returns:
-       (str) The disease details
+       (str) Successfully added new disease details record
 
     Raises:
        HTTPException: if the user is not logged in
