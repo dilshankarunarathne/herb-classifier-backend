@@ -27,6 +27,7 @@ router = APIRouter(
 # TODO ER
 
 
+# TODO test endpoint
 @router.post("/insert")
 async def insert_disease(
     disease: str = Form(...),
