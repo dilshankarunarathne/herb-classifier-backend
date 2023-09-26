@@ -6,19 +6,6 @@ application. It has OAuth2 authentication and JWT token generation.
 [![Version](https://img.shields.io/badge/version-1.2-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[API Documentation - Bump.sh](https://bump.sh/dilshankarunarathne/doc/herb-classifier-api)
-
-## Table of Contents
-
-- [Herb Classifier Backend](#herb-classifier-backend)
-  - [Table of Contents](#table-of-contents)
-  - [Description](#description)
-    - [Project Scope](#project-scope)
-  - [Prerequisites](#prerequisites)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Contact Information](#contact-information)
-
 ## Description
 
 We develop a centralized and comprehensive database system for Hela Wedakama using 
@@ -41,20 +28,10 @@ and vice-versa.
 2. The model should at least be able to (trained for) identify three medicinal herbs.
 3. The users should be able to get the locations of which areas the plants would grow, or can be found.
 
-## Prerequisites
-
-- Python 3.8 or higher
-- pip 20.0 or higher
-- fastapi
-- uvicorn
-- pydantic
-- jose
-- passlib
-- mysql
-
 ## Contributing
 
-If you'd like to contribute to this project, please check the contribution guidelines for more information.
+Go ahead and check out the GitHub repository if you'd like to contribute to this project. Please check the contribution guidelines for more information.
+[Herb Classifier Backend](https://github.com/dilshankarunarathne/herb-classifier-backend/)
 
 ## License
 
@@ -71,6 +48,6 @@ This work is licensed under a
 
 For questions or feedback, please contact the author:
 
-- Author: Dilshan M. Karunarathne
+- Author: [Dilshan M. Karunarathne](https://github.com/dilshankarunarathne)
 - Email: ceo@altier.tech
 - Website: [http://altier.tech](http://altier.tech)

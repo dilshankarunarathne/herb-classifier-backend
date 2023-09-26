@@ -2,11 +2,11 @@ import mysql.connector
 from mysql.connector import errorcode
 
 """
-    middleware for accessing the herb database and performing CRUD operations on the disease table
+    middleware for accessing the herb database and performing CRUD operations on the herbs table
 """
 
 
-class DiseaseDAO:
+class HerbDAO:
     def __init__(self, host, user, password, database):
         self.host = host
         self.user = user
@@ -34,11 +34,11 @@ class DiseaseDAO:
         if self.cnx is not None:
             self.cnx.close()
 
-    def get_all(self):
+    def get_disease(self, herb):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT disease FROM disease"
-            cursor.execute(query)
+            query = "SELECT disease FROM herbs WHERE herb = %s"
+            cursor.execute(query, (herb, ))
             rows = cursor.fetchall()
             cursor.close()
             if not rows:
@@ -47,25 +47,15 @@ class DiseaseDAO:
         except mysql.connector.Error as err:
             print(err)
 
-    def query_disease(self, disease):
+    def get_herb(self, disease):
         try:
             cursor = self.cnx.cursor()
-            query = "SELECT * FROM disease WHERE disease = %s"
+            query = "SELECT herb FROM herbs WHERE disease = %s"
             cursor.execute(query, (disease, ))
-            row = cursor.fetchone()
+            rows = cursor.fetchall()
             cursor.close()
-            if row is None:
+            if not rows:
                 return None
-            return row
+            return rows
         except mysql.connector.Error as err:
             print(err)
-
-    def insert_new_disease(self, disease, symptoms, treatment):
-        cursor = self.cnx.cursor()
-        add_user = ("INSERT INTO disease "
-                    "(disease, symptoms, treatment) "
-                    "VALUES (%s, %s, %s)")
-        data = (disease, symptoms, treatment)
-        cursor.execute(add_user, data)
-        self.cnx.commit()
-        cursor.close()
