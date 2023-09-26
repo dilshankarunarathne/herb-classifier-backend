@@ -36,18 +36,18 @@ async def insert_disease(
     token: str = Depends(oauth2_scheme)
 ):
     """
-       The endpoint for searching a disease
+   The endpoint for searching a disease
 
-       Args:
-           disease (str): the disease to search for
-           token (oauth2 bearer token): the token for the user
+   Args:
+       disease (str): the disease to search for
+       token (oauth2 bearer token): the token for the user
 
-       Returns:
-           (str) The disease details
+   Returns:
+       (str) The disease details
 
-       Raises:
-           HTTPException: if the user is not logged in
-       """
+   Raises:
+       HTTPException: if the user is not logged in
+   """
 
 
 @router.post("/search")
