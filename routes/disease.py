@@ -35,6 +35,7 @@ async def insert_disease(
     treatment: str = Form(...),
     token: str = Depends(oauth2_scheme)
 ):
+    
 
 
 @router.post("/search")
