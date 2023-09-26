@@ -11,7 +11,7 @@ dao.connect()
 
 
 def add_location(lon, lat, herb):
-    dao.add_location(lon, lat, herb)
+    dao.add_location(lon, lat, herb, added_user)
 
 
 def get_location(herb):
