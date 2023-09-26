@@ -76,7 +76,7 @@ async def add_new_location(
 
     username = ""
     current_user = await get_current_user(token)
-    username = 
+    username = current_user.username
 
 
     add_location(lon, lat, herb, username)
