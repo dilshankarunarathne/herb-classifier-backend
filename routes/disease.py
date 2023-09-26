@@ -55,6 +55,7 @@ async def insert_disease(
 
     if insert_disease(disease, symptoms, treatment) is True:
         return "successfully added new disease"
+    else:
 
 
 @router.post("/search")
