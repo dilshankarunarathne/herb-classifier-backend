@@ -59,3 +59,6 @@ class DiseaseDAO:
             return row
         except mysql.connector.Error as err:
             print(err)
+
+    def insert_new_disease(self, disease, symptoms, treatment):
+        pass
