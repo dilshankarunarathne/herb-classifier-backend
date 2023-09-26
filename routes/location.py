@@ -75,7 +75,7 @@ async def add_new_location(
         raise credentials_exception
 
     username = ""
-    
+    current_user = await get_current_user(token)
 
     add_location(lon, lat, herb, username)
 
