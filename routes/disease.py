@@ -30,6 +30,7 @@ router = APIRouter(
 # TODO implement insert
 
 
+
 @router.post("/search")
 async def search_disease(
     disease: str = Form(...),
