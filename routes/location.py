@@ -29,8 +29,8 @@ router = APIRouter(
 
 @router.post("/get-location")
 async def get_location_for_herb(
-    herb: str = Form(...),
-    token: str = Depends(oauth2_scheme)
+        herb: str = Form(...),
+        token: str = Depends(oauth2_scheme)
 ):
     """
     The endpoint for getting location for a herb
@@ -52,10 +52,10 @@ async def get_location_for_herb(
 
 @router.post("/add-location")
 async def add_new_location(
-    lon: float = Form(...),
-    lat: float = Form(...),
-    herb: str = Form(...),
-    token: str = Depends(oauth2_scheme)
+        lon: float = Form(...),
+        lat: float = Form(...),
+        herb: str = Form(...),
+        token: str = Depends(oauth2_scheme)
 ):
     """
     The endpoint for adding a new location for a herb 
@@ -76,7 +76,6 @@ async def add_new_location(
 
     current_user = await get_current_user(token)
     username = current_user.username
-
 
     add_location(lon, lat, herb, username)
 
