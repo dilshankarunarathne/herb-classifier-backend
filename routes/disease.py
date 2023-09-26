@@ -30,7 +30,8 @@ router = APIRouter(
 # TODO implement insert
 @router.post("/insert")
 async def insert_disease(
-
+    disease: str = Form(...),
+    token: str = Depends(oauth2_scheme)
 ):
 
 
