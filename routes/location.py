@@ -74,7 +74,6 @@ async def add_new_location(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    username = ""
     current_user = await get_current_user(token)
     username = current_user.username
 
