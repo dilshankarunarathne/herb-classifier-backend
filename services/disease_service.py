@@ -15,7 +15,7 @@ def get_disease_details(disease):
     return symptoms, treatment
 
 
-def insert_disease(disease, )
+def insert_disease(disease, symptoms, )
 
 
 def get_all_diseases():
