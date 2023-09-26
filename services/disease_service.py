@@ -18,7 +18,7 @@ def get_disease_details(disease):
 def insert_disease(disease, symptoms, treatment):
     if get_disease_details(disease) is None:
         dao.insert_new_disease(disease, symptoms, treatment)
-    else 
+    else raise 
 
 
 def get_all_diseases():
