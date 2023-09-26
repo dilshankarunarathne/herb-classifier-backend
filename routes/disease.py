@@ -23,8 +23,6 @@ router = APIRouter(
     responses={404: {"description": "The requested page was not found"}},
 )
 
-# TODO ER
-
 
 @router.post("/insert")
 async def insert_disease(
