@@ -15,7 +15,7 @@ def get_disease_details(disease):
     return symptoms, treatment
 
 
-def insert_disease(disease, symptoms, treatment) -> str:
+def insert_disease(disease, symptoms, treatment) -> bool:
     if get_disease_details(disease) is None:
         dao.insert_new_disease(disease, symptoms, treatment)
         return True
