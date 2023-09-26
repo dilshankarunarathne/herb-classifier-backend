@@ -14,7 +14,8 @@ def get_disease_details(disease):
     try:
         (disease_id, disease_name, symptoms, treatment) = dao.query_disease(disease)
         return symptoms, treatment
-    
+    except Exception:
+        
 
 
 def add_disease(disease, symptoms, treatment) -> bool:
