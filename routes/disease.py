@@ -29,7 +29,9 @@ router = APIRouter(
 
 # TODO implement insert
 @router.post("/insert")
-async def insert_disease()
+async def insert_disease(
+
+):
 
 
 @router.post("/search")
