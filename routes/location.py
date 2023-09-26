@@ -74,6 +74,6 @@ async def add_new_location(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    add_location(lon, lat, herb)
+    add_location(lon, lat, herb, username)
 
     return {"message": "Successfully added new location"}
