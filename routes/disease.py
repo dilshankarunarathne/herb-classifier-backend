@@ -32,7 +32,7 @@ router = APIRouter(
 async def insert_disease(
     disease: str = Form(...),
     symptoms: str = Form(...),
-    treatment
+    treatment: str = F
     token: str = Depends(oauth2_scheme)
 ):
 
