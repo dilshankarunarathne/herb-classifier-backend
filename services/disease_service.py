@@ -11,11 +11,14 @@ dao.connect()
 
 
 def get_disease_details(disease):
-    (disease_id, disease_name, symptoms, treatment) = dao.query_disease(disease)
-    return symptoms, treatment
+    try:
+        (disease_id, disease_name, symptoms, treatment) = dao.query_disease(disease)
+        return symptoms, treatment
+    except TypeError:
+        return None
 
 
-def insert_disease(disease, symptoms, treatment) -> bool:
+def add_disease(disease, symptoms, treatment) -> bool:
     if get_disease_details(disease) is None:
         dao.insert_new_disease(disease, symptoms, treatment)
         return True
