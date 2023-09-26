@@ -6,3 +6,4 @@ class Location(BaseModel):
     lon: str
     lat: str
     herb: str
+    
