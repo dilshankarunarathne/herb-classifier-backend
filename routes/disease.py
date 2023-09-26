@@ -28,7 +28,7 @@ router = APIRouter(
 
 
 # TODO implement insert
-
+@router.post("/insert")
 
 
 @router.post("/search")
