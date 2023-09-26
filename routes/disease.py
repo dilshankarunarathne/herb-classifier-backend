@@ -54,7 +54,7 @@ async def insert_disease(
         raise credentials_exception
 
     if insert_disease(disease, symptoms, treatment) is True:
-        
+        return "successfully added new disease"
 
 
 @router.post("/search")
