@@ -61,4 +61,11 @@ class DiseaseDAO:
             print(err)
 
     def insert_new_disease(self, disease, symptoms, treatment):
-        pass
+        cursor = self.cnx.cursor()
+        add_user = ("INSERT INTO disease "
+                    "(disease, symptoms, treatment) "
+                    "VALUES (%s, %s, %s)")
+        data = (disease, symptoms, treatment)
+        cursor.execute(add_user, data)
+        self.cnx.commit()
+        cursor.close()
