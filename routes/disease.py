@@ -25,6 +25,8 @@ router = APIRouter(
 
 # TODO implement user id on the location table
 # TODO ER
+
+
 # TODO implement insert
 
 
