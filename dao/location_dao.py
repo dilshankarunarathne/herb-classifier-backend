@@ -47,7 +47,7 @@ class LocationDAO:
         except mysql.connector.Error as err:
             print(err)
 
-    def add_location(self, lon, lat, herb):
+    def add_location(self, lon, lat, herb, added_user):
         cursor = self.cnx.cursor()
         add_user = ("INSERT INTO location "
                     "(lon, lat, herb) "
