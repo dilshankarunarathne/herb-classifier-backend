@@ -50,6 +50,7 @@ async def insert_disease(
     Raises:
        HTTPException: if the user is not logged in
     """
+    
 
 
 @router.post("/search")
