@@ -75,6 +75,7 @@ async def add_new_location(
         raise credentials_exception
 
     username = ""
+    
 
     add_location(lon, lat, herb, username)
 
