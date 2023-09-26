@@ -1,6 +1,9 @@
-from fastapi import APIRouter, Form, Depends
+import cv2
+import numpy as np
+from fastapi import APIRouter, Form, Depends, UploadFile, File
 
 from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
+from classifier.main import recognize_plant
 from services.herb_service import get_herb_by_disease, get_disease_by_herb
 
 """
@@ -67,3 +70,21 @@ async def search_herb_by_disease(
         raise credentials_exception
 
     return get_disease_by_herb(herb)
+
+
+@router.post("/evaluate")
+async def evaluate_image(
+        image: UploadFile = File(...),
+        token: str = Depends(oauth2_scheme)
+):
+    if image.content_type != "image/jpeg":
+        return "Only jpeg images are supported"
+
+    if get_current_user(token) is None:
+        raise credentials_exception
+
+    contents = await image.read()
+    nparray = np.fromstring(contents, np.uint8)
+    img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
+
+    return recognize_plant(img)
