@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from keras.models import load_model
+from keras.preprocessing import image as preprosessor
 
 import cv2
 
@@ -21,7 +22,7 @@ def recognize_plant(image) -> str:
     )
 
     input_size = (227, 227)
-    img = image.load_img(blob, target_size=input_size)
+    img = preprosessor.load_img(blob, target_size=input_size)
     img_array = image.img_to_array(img)
 
     img_array = np.expand_dims(img_array, axis=0)
