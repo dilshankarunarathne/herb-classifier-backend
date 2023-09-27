@@ -51,6 +51,7 @@ and vice-versa.
 - jose
 - passlib
 - mysql
+- keras
 
 ## Contributing
 
