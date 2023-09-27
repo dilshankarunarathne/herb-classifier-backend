@@ -52,6 +52,7 @@ and vice-versa.
 - passlib
 - mysql
 - keras
+- opencv
 
 ## Contributing
 
