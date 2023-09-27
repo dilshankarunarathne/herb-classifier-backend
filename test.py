@@ -1,6 +1,0 @@
-import configparser 
-
-config = configparser .RawConfigParser()
-config.read('application.properties')
-
-print(config['database']['database.dbname'])
