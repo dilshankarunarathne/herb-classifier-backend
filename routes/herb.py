@@ -77,6 +77,7 @@ async def evaluate_image(
         image: UploadFile = File(...),
         token: str = Depends(oauth2_scheme)
 ):
+    
     if image.content_type != "image/jpeg":
         return "Only jpeg images are supported"
 
