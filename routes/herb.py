@@ -81,7 +81,7 @@ async def evaluate_image(
     The endpoint for evaluating an image of a plant to identify what plant it is
 
     Args:
-        
+        image (UploadFile): the image to evaluate        
         token (oauth2 bearer token): the token for the user
 
     Returns:
