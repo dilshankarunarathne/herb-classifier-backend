@@ -78,14 +78,14 @@ async def evaluate_image(
         token: str = Depends(oauth2_scheme)
 ):
     """
-    The endpoint for searching a disease by herb
+    The endpoint for evaluating an image of a plant to identify what plant it is
 
     Args:
-        herb (str): the herb to search for
+        
         token (oauth2 bearer token): the token for the user
 
     Returns:
-        (str) The disease for the herb
+        
     """
     if image.content_type != "image/jpeg":
         return "Only jpeg images are supported"
