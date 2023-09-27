@@ -7,3 +7,5 @@ python-jose~=3.3.0
 opencv-python~=4.7.0.72
 numpy~=1.24.2
 tensorflow~=2.13.0
+configparser~=6.0.0
+keras~=2.13.1
