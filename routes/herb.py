@@ -86,6 +86,7 @@ async def evaluate_image(
 
     Returns:
         (str) The plant identified in the image
+        (float) The probability of the plant identified in the image
     """
     if image.content_type != "image/jpeg":
         return "Only jpeg images are supported"
