@@ -22,7 +22,9 @@ def recognize_plant(image) -> str:
     )
 
     input_size = (227, 227)
-    img = preprosessor.load_img(blob, target_size=input_size)
+    _, img_bytes = cv2.imencode('.jpg', image)
+    img_io = io.BytesIO(img_bytes)
+    img = preprosessor.load_img(img_io, target_size=input_size)
     img_array = image.img_to_array(img)
 
     img_array = np.expand_dims(img_array, axis=0)
