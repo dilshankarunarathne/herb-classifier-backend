@@ -22,7 +22,7 @@ def recognize_plant(image_file) -> str:
         swapRB=False
     )
 
-    input_size = (227, 227)
+    input_size = (150, 150)  # Resize input image to (150, 150)
     _, img_bytes = cv2.imencode('.jpg', image_file)
     img_io = io.BytesIO(img_bytes)
     img = image.load_img(img_io, target_size=input_size)
