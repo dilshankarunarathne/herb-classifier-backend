@@ -85,7 +85,7 @@ async def evaluate_image(
         token (oauth2 bearer token): the token for the user
 
     Returns:
-        
+        (str) The plant identified in the image
     """
     if image.content_type != "image/jpeg":
         return "Only jpeg images are supported"
