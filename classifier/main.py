@@ -1,5 +1,7 @@
 import os
 import io
+from typing import Tuple
+
 import numpy as np
 from keras.models import load_model
 from keras.preprocessing import image
@@ -13,7 +15,7 @@ model = load_model(model_file_path)
 plant_classes = ['akkapana', 'iguru', 'non', 'vishnukanthi']
 
 
-def recognize_plant(image_file) -> str:
+def recognize_plant(image_file) -> Tuple[str, float]:
     blob = cv2.dnn.blobFromImage(
         image_file,
         1.0,
@@ -33,6 +35,8 @@ def recognize_plant(image_file) -> str:
 
     predictions = model.predict(img_array)
 
-    predicted_class = plant_classes[np.argmax(predictions[0])]
+    predicted_class_index = np.argmax(predictions[0])
+    predicted_class = plant_classes[predicted_class_index]
+    probability = float(predictions[0][predicted_class_index])
 
-    return predicted_class
+    return predicted_class, probability
