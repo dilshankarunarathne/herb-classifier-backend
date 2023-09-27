@@ -78,10 +78,14 @@ async def evaluate_image(
         token: str = Depends(oauth2_scheme)
 ):
     """
-    
-    :param image:
-    :param token:
-    :return:
+    The endpoint for searching a disease by herb
+
+    Args:
+        herb (str): the herb to search for
+        token (oauth2 bearer token): the token for the user
+
+    Returns:
+        (str) The disease for the herb
     """
     if image.content_type != "image/jpeg":
         return "Only jpeg images are supported"
