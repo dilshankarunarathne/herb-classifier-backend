@@ -2,7 +2,7 @@ import os
 import io
 import numpy as np
 from keras.models import load_model
-from keras.preprocessing import image as preprosessor
+from keras.preprocessing import image 
 
 import cv2
 
@@ -13,9 +13,9 @@ model = load_model(model_file_path)
 plant_classes = ['akkapana', 'iguru', 'non', 'vishnukanthi']
 
 
-def recognize_plant(image) -> str:
+def recognize_plant(image_file) -> str:
     blob = cv2.dnn.blobFromImage(
-        image,
+        image_file,
         1.0,
         (227, 227),
         (78.4263377603, 87.7689143744, 114.895847746),
@@ -23,7 +23,7 @@ def recognize_plant(image) -> str:
     )
 
     input_size = (227, 227)
-    _, img_bytes = cv2.imencode('.jpg', image)
+    _, img_bytes = cv2.imencode('.jpg', image_file)
     img_io = io.BytesIO(img_bytes)
     img = preprosessor.load_img(img_io, target_size=input_size)
     img_array = image.img_to_array(img)
