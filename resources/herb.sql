@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 25, 2023 at 01:05 PM
+-- Generation Time: Sep 29, 2023 at 08:13 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `blacklist` (
   `token` varchar(255) NOT NULL,
   `blacklisted_on` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `blacklist`
@@ -44,7 +44,9 @@ INSERT INTO `blacklist` (`id`, `token`, `blacklisted_on`) VALUES
 (3, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJleHAiOjE2OTU2ODE3MjV9.f7X-xveJaFSVtClWvWVF-vVd0_Wza3xcOVTEYF0pE68', '2023-09-24 22:12:38'),
 (4, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJleHAiOjE2OTU2ODE3MjV9.f7X-xveJaFSVtClWvWVF-vVd0_Wza3xcOVTEYF0pE68', '2023-09-25 08:32:54'),
 (5, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJleHAiOjE2OTU2ODE3MjV9.f7X-xveJaFSVtClWvWVF-vVd0_Wza3xcOVTEYF0pE68', '2023-09-25 08:38:18'),
-(6, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJleHAiOjE2OTU3MTkyNTd9.nsjtDwbbfsX_tk3OqiMTodhwb8ZRN3DEa0jsILuYj7E', '2023-09-25 08:39:26');
+(6, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjIiLCJleHAiOjE2OTU3MTkyNTd9.nsjtDwbbfsX_tk3OqiMTodhwb8ZRN3DEa0jsILuYj7E', '2023-09-25 08:39:26'),
+(7, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjQiLCJleHAiOjE2OTU5Mzc1NzJ9.n_TbwTAaCD2Q5kJ8hDGcQ2SL8wbQid-xWBDHohluivg', '2023-09-27 21:16:59'),
+(8, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcjQiLCJleHAiOjE2OTU5Mzc1NzJ9.n_TbwTAaCD2Q5kJ8hDGcQ2SL8wbQid-xWBDHohluivg', '2023-09-27 21:18:46');
 
 -- --------------------------------------------------------
 
@@ -59,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `disease` (
   `symptoms` text NOT NULL,
   `treatment` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `disease`
@@ -75,7 +77,9 @@ INSERT INTO `disease` (`id`, `disease`, `symptoms`, `treatment`) VALUES
 (7, 'hemorrhoids', 'pain_or_discomfort, swelling_around_your_anus, bleeding', 'mukunuwanna and mung bean boiled and drink'),
 (8, 'worm_diseases', 'tiredness, weakness, abnormal_pain, weight_loss', 'bata dalu mallum, elabudu leaves mallum'),
 (9, 'cystitis', 'pain_and_burning_or_stining_when_you_pee, urine_that_dark_and_cloudy_or_strong_smelling, pain_low_down_in_your_tummy', 'drinking akkapana leaves juice, the leaves of the penala are cropped,squeezed, and the drink'),
-(10, 'uninary_stones', 'vomiting, urine_that_smells_bad', 'kekiri seeds and akkapana boiled water with honey and drink');
+(10, 'uninary_stones', 'vomiting, urine_that_smells_bad', 'kekiri seeds and akkapana boiled water with honey and drink'),
+(11, 'test', 'test', 'test'),
+(12, 'test disease', 'test symptom 1, test symptom 2', 'test treatment');
 
 -- --------------------------------------------------------
 
@@ -127,16 +131,20 @@ CREATE TABLE IF NOT EXISTS `location` (
   `lon` varchar(20) NOT NULL,
   `lat` varchar(20) NOT NULL,
   `herb` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+  `added_user` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `added_user` (`added_user`)
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `location`
 --
 
-INSERT INTO `location` (`id`, `lon`, `lat`, `herb`) VALUES
-(1, '8.65687414311649', '81.21117931149148', 'vishnukanthi'),
-(2, '8.6564934342656', '81.2111452353464', 'kaluduru');
+INSERT INTO `location` (`id`, `lon`, `lat`, `herb`, `added_user`) VALUES
+(15, '6.6564655542656', '74.2111455151464', 'ginger', 'testuser3'),
+(14, '6.6564655542656', '74.2111455151464', 'ginger', 'testuser3'),
+(16, '6.6564655542656', '74.256456464564', 'vishnukanthi', 'testuser3'),
+(17, '6.6525554265633', '74.256452344564', 'ginger', 'testuser4');
 
 -- --------------------------------------------------------
 
@@ -160,7 +168,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `email`, `is_admin`, `hashed_password`) VALUES
 (1, 'testuser1', 'testuser1@abc.com', NULL, '$2b$12$OIQXGYLYGST.u/8o0oF2tuAi6RnMmZtKpDO7qPEP3/yl0WVyZcpEG'),
-(2, 'testuser2', 'testuser2@abc.com', 0, '$2b$12$Vg30fkUbUSMzVou35Nhfn.WjQsKgFrSFnmAf4/z1wz3zyDUy0gb.K');
+(2, 'testuser2', 'testuser2@abc.com', 0, '$2b$12$Vg30fkUbUSMzVou35Nhfn.WjQsKgFrSFnmAf4/z1wz3zyDUy0gb.K'),
+(3, 'testuser3', 'testuser3@abc.com', 0, '$2b$12$TDKYAVmBRZbuwjHb6CPX7OfsxcDitsE1lbX1y2YKaN4MFPRlOsLB2'),
+(4, 'testuser4', 'testuser4@abc.com', 0, '$2b$12$NcDOVaxLL5p.38z2OmZNFOyueJxYZLvlsgaDRyzeoexfgPioHl41.');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
