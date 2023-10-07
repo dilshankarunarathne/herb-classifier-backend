@@ -2,6 +2,8 @@ from fastapi import FastAPI
 
 from routes import auth, disease, herb, location
 
+
+
 app = FastAPI()
 
 app.include_router(auth.router)
