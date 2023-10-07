@@ -12,8 +12,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app = FastAPI()
-
 app.include_router(auth.router)
 app.include_router(herb.router)
 app.include_router(disease.router)
