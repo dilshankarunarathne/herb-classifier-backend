@@ -6,7 +6,7 @@ from routes import auth, disease, herb, location
 
 app = FastAPI()
 
-origins = ['http://localhost:3000','http://192.168.178.23:3000']  # add your front-end ip:port here
+origins = ['http://localhost:3000', 'http://192.168.178.23:3000']  # add your front-end ip:port here
 
 app.add_middleware(
     CORSMiddleware,
