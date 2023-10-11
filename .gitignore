@@ -155,3 +155,4 @@ cython_debug/
 #bin/classifier_sequential.h5
 classifier/test.png
 bin/classifier_sequential.h5
+bin/classifier_sequential - Copy.hdf5
