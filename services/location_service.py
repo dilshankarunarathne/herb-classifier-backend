@@ -20,3 +20,6 @@ def get_location(herb):
     for h in herbs:
         return_list.append({h[1], h[2], h[4]})
     return return_list
+
+
+
