@@ -26,5 +26,6 @@ def get_location(herb):
     herbs = dao.get_location_by_herb(herb)
     return_list = []
     for h in herbs:
-        return_list.append({h[1], h[2], h[4]})
+        val_dict = {'id': h[0], 'longitude': h[1], 'latitude': h[2], 'herb': h[3], 'added user': h[4]}
+        return_list.append(val_dict)
     return return_list
