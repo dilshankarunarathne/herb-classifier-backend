@@ -25,5 +25,6 @@ router = APIRouter(
 
 @router.post()
 async def search_disease(
-        
+    disease: str = Form(...),
+    token: str = Depends(oauth2_scheme)
 )
