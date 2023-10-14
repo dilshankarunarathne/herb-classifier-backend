@@ -72,12 +72,6 @@ treatment(uninary_stones, ' kekiri seeds and akkapana boiled water with honey an
 % Rules
 has_symptom(X, Symptom) :- symptom(X, Symptom).
 
-prompt_condition :-
-    write('Enter the disease: '),
-    read(Condition),
-    get_symptoms(Condition),
-    get_treatment(Condition).
-
 get_symptoms(Condition) :-
     has_symptom(Condition, Symptom),
     write('Symptom: '), write(Symptom), nl,
@@ -90,3 +84,9 @@ get_treatment(Condition) :-
 
 get_symptoms(_).
 get_treatment(_).
+
+prompt_condition :-
+    write('Enter the disease: '),
+    read(Condition),
+    get_symptoms(Condition),
+    get_treatment(Condition).
