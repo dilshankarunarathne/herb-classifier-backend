@@ -1,1 +1,1 @@
-async def 
+async def diagnose_by_disease()
