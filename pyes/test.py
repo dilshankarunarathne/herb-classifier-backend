@@ -31,3 +31,5 @@ async def diagnose(symptom: str):
 
 if __name__ == '__main__':
     print(diagnose("normal_fever"))
+
+
