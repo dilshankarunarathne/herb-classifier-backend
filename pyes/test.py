@@ -1,10 +1,9 @@
 from pyswip import Prolog
 
 prolog = Prolog()
-prolog.consult("knowledge_base.pl") 
+prolog.consult("knowledge_base.pl")
 
 
-@app.get("/diagnose/{symptom}")
 async def diagnose(symptom: str):
     try:
         # Query the Prolog knowledge base for the disease related to the given symptom
