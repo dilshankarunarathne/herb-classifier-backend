@@ -1,4 +1,4 @@
-% Predicates
+% Facts
 disease(semgedi).
 disease(pain_in_heart).
 disease(normal_fever).
