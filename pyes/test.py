@@ -30,3 +30,4 @@ async def diagnose(symptom: str):
 
 
 if __name__ == '__main__':
+    
