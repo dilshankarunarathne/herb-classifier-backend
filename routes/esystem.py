@@ -4,7 +4,7 @@ from auth.authorize import oauth2_scheme, get_current_user, credentials_exceptio
 from services.disease_service import get_disease_details, add_disease
 
 """
-    API router for disease endpoint
+    API router for esystem (expert system) endpoint
 
     Attributes:
         router (APIRouter): the router for the endpoint
