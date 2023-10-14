@@ -83,11 +83,11 @@ get_treatment(Condition) :-
     write('Treatment: '), write(Treatment), nl,
     fail.
 
-get_symptoms(_).
-get_treatment(_).
-
 prompt_condition :-
     write('Enter the disease: '),
     read(Condition),
     get_symptoms(Condition),
     get_treatment(Condition).
+
+get_symptoms(_).
+get_treatment(_).
