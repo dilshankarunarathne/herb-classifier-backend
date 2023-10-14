@@ -1,7 +1,7 @@
 from pyswip import Prolog
 
 prolog = Prolog()
-prolog.consult("path/to/your/knowledge_base.pl")  # Replace with the actual path to your Prolog file
+prolog.consult("knowledge_base.pl") 
 
 
 @app.get("/diagnose/{symptom}")
