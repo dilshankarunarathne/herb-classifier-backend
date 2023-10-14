@@ -29,7 +29,7 @@ async def diagnose(symptom: str):
         return {"error": str(e)}
 
 
+
+
 if __name__ == '__main__':
     print(diagnose("normal_fever"))
-
-
