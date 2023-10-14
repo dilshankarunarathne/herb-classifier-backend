@@ -1,35 +1,34 @@
 from pyswip import Prolog
 
+# Initialize the Prolog engine and load the knowledge base
 prolog = Prolog()
-prolog.consult("knowledge_base.pl")
+prolog.consult("knowledge_base.pl")  # Replace with the actual path to your Prolog file
 
+def get_diagnosis(symptoms):
+    # Build a query for diseases based on symptoms
+    query = "has_symptom(Disease, {})".format(",".join(map(str, symptoms)))
 
-async def diagnose(symptom: str):
-    try:
-        # Query the Prolog knowledge base for the disease related to the given symptom
-        query = f"has_symptom(Disease, {symptom})"
-        diseases = list(prolog.query(query))
+    # Query the Prolog knowledge base
+    solutions = list(prolog.query(query))
 
-        if diseases:
-            # Assuming there's only one disease for the given symptom
-            disease = diseases[0]['Disease']
-            # Query the Prolog knowledge base for the treatment of the diagnosed disease
-            treatment_query = f"treatment({disease}, Treatment)"
-            treatments = list(prolog.query(treatment_query))
+    # Extract disease names from solutions
+    diseases = [solution["Disease"] for solution in solutions]
 
-            if treatments:
-                treatment = treatments[0]['Treatment']
-            else:
-                treatment = "No specific treatment found."
+    return diseases
 
-            return {"disease": disease, "treatment": treatment}
+# Example usage
+user_symptoms = ['difficulty_swallowing', 'pain_in_thorax_and_ear']
+possible_diseases = get_diagnosis(user_symptoms)
+
+if possible_diseases:
+    print("Possible Diseases:", possible_diseases)
+    for disease in possible_diseases:
+        # Query Prolog for treatments based on the diagnosed disease
+        treatments_query = "treatment({}, Treatment)".format(disease)
+        treatments = list(prolog.query(treatments_query))
+        if treatments:
+            print("Treatment for", disease + ":", treatments[0]["Treatment"])
         else:
-            return {"error": "No disease found for the given symptom."}
-    except Exception as e:
-        return {"error": str(e)}
-
-
-# TODO implement the rest of the functions
-
-if __name__ == '__main__':
-    print(diagnose("normal_fever"))
+            print("No specific treatment found for", disease)
+else:
+    print("No matching disease found for the given symptoms.")
