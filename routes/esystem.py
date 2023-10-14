@@ -32,3 +32,5 @@ async def search_disease(
         raise credentials_exception
 
     return diagnose_by_disease(disease)
+
+
