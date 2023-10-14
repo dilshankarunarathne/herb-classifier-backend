@@ -77,17 +77,16 @@ get_symptoms(Condition) :-
     has_symptom(Condition, Symptom),
     write('Symptom: '), write(Symptom), nl,
     fail.
+get_symptoms(_).
 
 get_treatment(Condition) :-
     treatment(Condition, Treatment),
     write('Treatment: '), write(Treatment), nl,
     fail.
+get_treatment(_).
 
 prompt_condition :-
     write('Enter the disease: '),
     read(Condition),
     get_symptoms(Condition),
     get_treatment(Condition).
-
-get_symptoms(_).
-get_treatment(_).
