@@ -70,7 +70,7 @@ treatment(uninary_stones, ' kekiri seeds and akkapana boiled water with honey an
 
 
 
-% Rules
+% Rules and Queries
 has_symptom(X, Symptom) :- symptom(X, Symptom).
 
 get_symptoms(Condition) :-
