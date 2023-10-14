@@ -31,4 +31,4 @@ async def search_disease(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    return 
+    return diagnose_by_disease(disease)
