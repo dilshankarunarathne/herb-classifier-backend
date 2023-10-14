@@ -34,3 +34,4 @@ async def search_disease(
     return diagnose_by_disease(disease)
 
 
+
