@@ -27,3 +27,6 @@ async def diagnose(symptom: str):
             return {"error": "No disease found for the given symptom."}
     except Exception as e:
         return {"error": str(e)}
+
+
+
