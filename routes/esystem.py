@@ -34,4 +34,4 @@ async def search_disease(
     return diagnose_by_disease(disease)
 
 
-
+# TODO implement the rest of the routes
