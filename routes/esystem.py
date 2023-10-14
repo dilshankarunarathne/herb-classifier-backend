@@ -17,7 +17,7 @@ from services.disease_service import get_disease_details, add_disease
 """
 
 router = APIRouter(
-    prefix="/api/disease",
+    prefix="/api/esystem",
     tags=["disease"],
     responses={404: {"description": "The requested page was not found"}},
 )
