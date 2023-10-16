@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Form, Depends
 
 from auth.authorize import oauth2_scheme, get_current_user, credentials_exception
-from services.es_service import diagnose_by_disease, query_knowledge_base
+from services.es_service import query_knowledge_base
 
 """
     API router for esystem (expert system) endpoint
