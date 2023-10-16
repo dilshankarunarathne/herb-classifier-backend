@@ -1,5 +1,1 @@
-async def diagnose_by_disease(disease: str):
-    pass
-
-
-# TODO implementation
+async def query_knowledge_base()
