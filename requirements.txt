@@ -11,3 +11,4 @@ configparser~=6.0.0
 keras~=2.13.1
 starlette~=0.27.0
 uvicorn~=0.23.2
+pyswip~=0.2.11
