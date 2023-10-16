@@ -7,6 +7,8 @@ prolog.consult("knowledge_base.pl")
 # Mapping of verbal queries to Prolog predicates
 query_mappings = {
     "What are the symptoms of pain in the heart?": "has_symptom(pain_in_heart, Symptom).",
+"What are the common symptoms of semgedi?": "has_common_symptom(semgedi, Symptom).",
+    
     # Add more query mappings as needed
 }
 
