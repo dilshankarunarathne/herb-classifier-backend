@@ -69,7 +69,6 @@ results = list(prolog.query(prolog_query))
 if results:
     print("Results:")
     for result in results:
-        # Process result dictionary and display relevant information
         print(result)
 else:
     print("No matching information found.")
