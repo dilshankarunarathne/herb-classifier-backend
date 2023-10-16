@@ -93,10 +93,3 @@ prompt_condition :-
 
 has_common_symptom(X) :- symptom(X, cough).
 has_common_symptom(X) :- symptom(X, tiredness).
-
-severity_level(semgedi, mild).
-severity_level(pain_in_heart, severe).
-severity_level(normal_fever, moderate).
-
-dietary_recommendation(semgedi, 'Avoid cold beverages and spicy foods.').
-dietary_recommendation(gastric, 'Eat small, frequent meals and avoid fatty foods.').
