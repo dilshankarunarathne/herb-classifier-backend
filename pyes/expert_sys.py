@@ -63,6 +63,6 @@ def query_knowledge_base(query: str):
     prolog_query = translate_to_prolog_query(query)
     results = list(prolog.query(prolog_query))
     if results:
-        
+        return results
     else:
-        print("No matching information found.")
+        "No matching information found."
