@@ -93,3 +93,7 @@ prompt_condition :-
 
 has_common_symptom(X) :- symptom(X, cough).
 has_common_symptom(X) :- symptom(X, tiredness).
+
+severity_level(semgedi, mild).
+severity_level(pain_in_heart, severe).
+severity_level(normal_fever, moderate).
