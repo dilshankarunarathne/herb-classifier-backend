@@ -54,6 +54,7 @@ and vice-versa.
 - keras
 - opencv
 - pyswip
+- starlette
 
 ## Contributing
 
