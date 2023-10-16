@@ -31,4 +31,4 @@ async def search_disease(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    return query_knowledge_base(disease)
+    return query_knowledge_base(query)
