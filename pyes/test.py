@@ -63,7 +63,6 @@ user_query = input("Please enter your query: ")
 
 prolog_query = translate_to_prolog_query(user_query)
 
-# Query the Prolog knowledge base
 results = list(prolog.query(prolog_query))
 
 # Process and display results
