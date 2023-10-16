@@ -43,7 +43,8 @@ query_mappings = {
     "Which diseases cause a bad taste in the mouth?": "has_symptom(Disease, 'bad_taste_in_the_mouth').",
     "Which diseases cause a cough with mucus?": "has_symptom(Disease, 'cough_with_mucus').",
     "Which diseases cause shortness of breath?": "has_symptom(Disease, 'shortness_of_breath').",
-    "Which diseases cause pain and discomfort in the abdomen?": "has_symptom(Disease, 'pain_and_discomfort_in_the_abdomen').",
+    "Which diseases cause pain and discomfort in the abdomen?": "has_symptom(Disease, "
+                                                                "'pain_and_discomfort_in_the_abdomen').",
     "Which diseases cause fatigue?": "has_symptom(Disease, 'fatigue').",
     "Which diseases cause weakness?": "has_symptom(Disease, 'weakness').",
     "Which diseases cause a loss of appetite?": "has_symptom(Disease, 'loss_of_appetite').",
