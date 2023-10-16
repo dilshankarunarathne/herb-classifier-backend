@@ -65,4 +65,4 @@ def query_knowledge_base(query: str):
     if results:
         return results
     else:
-        "No matching information found."
+        return "No matching information found."
