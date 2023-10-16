@@ -60,7 +60,7 @@ def translate_to_prolog_query(verbal_query):
 
 
 def query_knowledge_base(query: str):
-prolog_query = translate_to_prolog_query(user_query)
+prolog_query = translate_to_prolog_query(query)
 
 results = list(prolog.query(prolog_query))
 
