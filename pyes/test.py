@@ -61,7 +61,6 @@ def translate_to_prolog_query(verbal_query):
 
 user_query = input("Please enter your query: ")
 
-# Translate verbal query to Prolog query
 prolog_query = translate_to_prolog_query(user_query)
 
 # Query the Prolog knowledge base
