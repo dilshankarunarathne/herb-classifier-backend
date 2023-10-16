@@ -8,7 +8,8 @@ prolog.consult("knowledge_base.pl")
 query_mappings = {
     "What are the symptoms of pain in the heart?": "has_symptom(pain_in_heart, Symptom).",
 "What are the common symptoms of semgedi?": "has_common_symptom(semgedi, Symptom).",
-"How severe is pain_in_heart?": 
+"How severe is pain_in_heart?": "severity_level(pain_in_heart, Severity).",
+    
     # Add more query mappings as needed
 }
 
