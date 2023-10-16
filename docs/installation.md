@@ -40,5 +40,6 @@ Visit [https://www.python.org/downloads/](https://www.python.org/downloads/relea
 pip install -r requirements.txt
 ```
 
+3. Make sure to install this
 
 
