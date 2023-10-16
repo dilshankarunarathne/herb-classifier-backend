@@ -59,7 +59,6 @@ def translate_to_prolog_query(verbal_query):
     return query_mappings.get(verbal_query, "Unknown query.")
 
 
-# Get user input in verbal language
 user_query = input("Please enter your query: ")
 
 # Translate verbal query to Prolog query
