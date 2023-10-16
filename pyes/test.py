@@ -24,7 +24,8 @@ query_mappings = {
     "Which diseases cause pain in the thorax and ear?": "has_symptom(Disease, 'pain_in_thorax_and_ear').",
     "Which diseases cause abnormal heart rhythm?": "has_symptom(Disease, 'abnormal_heart_rhythm').",
     "Which diseases cause bloating?": "has_symptom(Disease, bloating).",
-    "Which diseases cause severe pain on either side of the lower back?": "has_symptom(Disease, 'severe_pain_on_either_side_of_your_lower_back').",
+    "Which diseases cause severe pain on either side of the lower back?": "has_symptom(Disease, "
+                                                                          "'severe_pain_on_either_side_of_your_lower_back').",
     "Which diseases cause loss of appetite?": "has_symptom(Disease, 'loss_of_appitite').",
     "Which diseases cause sore throat?": "has_symptom(Disease, 'sore_thorat').",
     "Which diseases cause change in voice?": "has_symptom(Disease, 'change_in_voice').",
