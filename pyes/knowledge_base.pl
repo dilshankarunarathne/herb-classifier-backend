@@ -90,3 +90,6 @@ prompt_condition :-
     read(Condition),
     get_symptoms(Condition),
     get_treatment(Condition).
+
+has_common_symptom(X) :- symptom(X, cough).
+has_common_symptom(X) :- symptom(X, tiredness).
