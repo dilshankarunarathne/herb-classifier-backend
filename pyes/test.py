@@ -3,7 +3,6 @@ from pyswip import Prolog
 prolog = Prolog()
 prolog.consult("knowledge_base.pl")
 
-# Mapping of verbal queries to Prolog predicates
 query_mappings = {
     "What are the symptoms of semgedi?": "get_symptoms(semgedi).",
     "What are the symptoms of normal_fever?": "get_symptoms(normal_fever).",
