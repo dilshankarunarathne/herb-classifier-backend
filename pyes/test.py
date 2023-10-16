@@ -1,6 +1,5 @@
 from pyswip import Prolog
 
-# Initialize Prolog engine and consult the knowledge base
 prolog = Prolog()
 prolog.consult("knowledge_base.pl")
 
