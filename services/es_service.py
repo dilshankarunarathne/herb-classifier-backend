@@ -1,1 +1,2 @@
-async def query_knowledge_base(query: str)
+async def query_knowledge_base(query: str):
+    
