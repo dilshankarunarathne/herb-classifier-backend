@@ -1,34 +1,32 @@
 from pyswip import Prolog
 
-# Initialize the Prolog engine and load the knowledge base
+# Initialize Prolog engine and consult the knowledge base
 prolog = Prolog()
-prolog.consult("knowledge_base.pl")  # Replace with the actual path to your Prolog file
+prolog.consult("knowledge_base.pl")
 
-def get_diagnosis(symptoms):
-    # Build a query for diseases based on symptoms
-    query = "has_symptom(Disease, {})".format(",".join(map(str, symptoms)))
+# Mapping of verbal queries to Prolog predicates
+query_mappings = {
+    "What are the symptoms of pain in the heart?": "has_symptom(pain_in_heart, Symptom).",
+    # Add more query mappings as needed
+}
 
-    # Query the Prolog knowledge base
-    solutions = list(prolog.query(query))
+def translate_to_prolog_query(verbal_query):
+    return query_mappings.get(verbal_query, "Unknown query.")
 
-    # Extract disease names from solutions
-    diseases = [solution["Disease"] for solution in solutions]
+# Get user input in verbal language
+user_query = input("Please enter your query: ")
 
-    return diseases
+# Translate verbal query to Prolog query
+prolog_query = translate_to_prolog_query(user_query)
 
-# Example usage
-user_symptoms = ['difficulty_swallowing', 'pain_in_thorax_and_ear']
-possible_diseases = get_diagnosis(user_symptoms)
+# Query the Prolog knowledge base
+results = list(prolog.query(prolog_query))
 
-if possible_diseases:
-    print("Possible Diseases:", possible_diseases)
-    for disease in possible_diseases:
-        # Query Prolog for treatments based on the diagnosed disease
-        treatments_query = "treatment({}, Treatment)".format(disease)
-        treatments = list(prolog.query(treatments_query))
-        if treatments:
-            print("Treatment for", disease + ":", treatments[0]["Treatment"])
-        else:
-            print("No specific treatment found for", disease)
+# Process and display results
+if results:
+    print("Results:")
+    for result in results:
+        # Process result dictionary and display relevant information
+        print(result)
 else:
-    print("No matching disease found for the given symptoms.")
+    print("No matching information found.")
