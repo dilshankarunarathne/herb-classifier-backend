@@ -38,7 +38,8 @@ query_mappings = {
     "Which diseases cause abnormal bloating?": "has_symptom(Disease, 'abnormal_bloating').",
     "Which diseases cause stools that are dry and hard?": "has_symptom(Disease, 'stools_are_dry_and_hard').",
     "Which diseases cause pain_low_down_in_your_tummy?": "has_symptom(Disease, 'pain_low_down_in_your_tummy').",
-    "Which diseases cause urine that is dark and cloudy or strong-smelling?": "has_symptom(Disease, 'urine_that_dark_and_cloudy_or_strong_smelling').",
+    "Which diseases cause urine that is dark and cloudy or strong-smelling?": "has_symptom(Disease, "
+                                                                              "'urine_that_dark_and_cloudy_or_strong_smelling').",
     "Which diseases cause difficulty swallowing?": "has_symptom(Disease, 'difficulty_swallowing').",
     "Which diseases cause a bad taste in the mouth?": "has_symptom(Disease, 'bad_taste_in_the_mouth').",
     "Which diseases cause a cough with mucus?": "has_symptom(Disease, 'cough_with_mucus').",
