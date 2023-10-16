@@ -34,7 +34,8 @@ query_mappings = {
     "Which diseases cause pain or discomfort?": "has_symptom(Disease, 'pain_or_discomfort').",
     "Which diseases cause abnormal pain?": "has_symptom(Disease, 'abnormal_pain').",
     "Which diseases cause urine that smells bad?": "has_symptom(Disease, 'urine_that_smells_bad').",
-    "Which diseases cause pain and burning or stinging when you pee?": "has_symptom(Disease, 'pain_and_burning_or_stining_when_you_pee').",
+    "Which diseases cause pain and burning or stinging when you pee?": "has_symptom(Disease, "
+                                                                       "'pain_and_burning_or_stining_when_you_pee').",
     "Which diseases cause abnormal bloating?": "has_symptom(Disease, 'abnormal_bloating').",
     "Which diseases cause stools that are dry and hard?": "has_symptom(Disease, 'stools_are_dry_and_hard').",
     "Which diseases cause pain_low_down_in_your_tummy?": "has_symptom(Disease, 'pain_low_down_in_your_tummy').",
