@@ -65,7 +65,6 @@ prolog_query = translate_to_prolog_query(user_query)
 
 results = list(prolog.query(prolog_query))
 
-# Process and display results
 if results:
     print("Results:")
     for result in results:
