@@ -48,8 +48,6 @@ symptom(uninary_stones,more_vague_pain ).
 symptom(uninary_stones,vomiting ).
 symptom(uninary_stones,urine_that_smells_bad ).
 
-
-
 treatment(sem_gedi, 'kaluduru grind pottani and put it in the throat to turn phlegm ').
 treatment(pain_in_heart, 'drink one teaspoon of kubuk powder with raw milk').
 treatment(pain_in_heart,'tippili is fried in a pan, crushed and mixed with honey and rubbed on the tongue').
@@ -67,6 +65,13 @@ treatment(worm_diseases, 'elabudu leaves mallum').
 treatment(cystitis, 'drinking akkapana leaves juice').
 treatment(cystitis, 'the leaves of the penala are cropped,squeezed, and the drink').
 treatment(uninary_stones, ' kekiri seeds and akkapana boiled water with honey and drink').
+
+severity_level(semgedi, mild).
+severity_level(pain_in_heart, severe).
+severity_level(normal_fever, moderate).
+
+dietary_recommendation(semgedi, 'Avoid cold beverages and spicy foods.').
+dietary_recommendation(gastric, 'Eat small, frequent meals and avoid fatty foods.').
 
 
 
