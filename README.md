@@ -55,6 +55,7 @@ and vice-versa.
 - opencv
 - pyswip
 - starlette
+- configparser
 
 ## Contributing
 
