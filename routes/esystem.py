@@ -25,7 +25,7 @@ router = APIRouter(
 
 @router.post("/")
 async def search_disease(
-    input: str = Form(...),
+    query: str = Form(...),
     token: str = Depends(oauth2_scheme)
 ):
     if await get_current_user(token) is None:
