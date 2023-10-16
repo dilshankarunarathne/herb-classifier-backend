@@ -53,6 +53,7 @@ and vice-versa.
 - mysql
 - keras
 - opencv
+- pyswip
 
 ## Contributing
 
