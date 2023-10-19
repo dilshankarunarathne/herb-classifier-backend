@@ -70,6 +70,9 @@ sys.stdout = open(os.devnull, 'w')
 
 results = list(prolog.query(translate_to_prolog_query(user_query)))
 
+# Restore standard output
+sys.stdout = original_stdout
+
 # Now you can print and return the results
 if results:
     print("Results:")
