@@ -31,4 +31,7 @@ async def search_disease(
     if await get_current_user(token) is None:
         raise credentials_exception
 
-    return query_knowledge_base(query)
+    results = query_knowledge_base(query)
+
+    for result in results:
+        print(result)
