@@ -1,7 +1,7 @@
 from pyswip import Prolog
 
 prolog = Prolog()
-prolog.consult('knowledge_base.pl')
+prolog.consult('pyes/knowledge_base.pl')
 
 query_mappings = {
     "What are the symptoms of semgedi?": "get_symptoms(semgedi).",
@@ -61,8 +61,5 @@ def translate_to_prolog_query(verbal_query):
 
 def process_user_query(query: str):
     prolog_query = translate_to_prolog_query(query)
+
     results = list(prolog.query(prolog_query))
-    if results:
-        return results
-    else:
-        return "No matching information found."
