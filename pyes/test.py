@@ -63,6 +63,10 @@ def translate_to_prolog_query(verbal_query):
 
 user_query = input("Please enter your query: ")
 
+# Redirect standard output to null
+original_stdout = sys.stdout
+sys.stdout = open(os.devnull, 'w')
+
 
 results = list(prolog.query(translate_to_prolog_query(user_query)))
 
