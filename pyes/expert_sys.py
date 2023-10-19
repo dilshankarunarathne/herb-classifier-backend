@@ -1,9 +1,7 @@
-import collections
-
 from pyswip import Prolog
 
 prolog = Prolog()
-prolog.consult("./pyes/knowledge_base.pl")
+prolog.consult('knowledge_base.pl')
 
 query_mappings = {
     "What are the symptoms of semgedi?": "get_symptoms(semgedi).",
