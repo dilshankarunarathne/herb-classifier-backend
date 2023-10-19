@@ -1,5 +1,3 @@
-import collections
-
 from pyes.expert_sys import process_user_query
 
 
