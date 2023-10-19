@@ -58,14 +58,16 @@ query_mappings = {
 def translate_to_prolog_query(verbal_query):
     return query_mappings.get(verbal_query, "Unknown query.")
 
-
 user_query = input("Please enter your query: ")
 
+# Convert the generator to a list immediately after querying
 results = list(prolog.query(translate_to_prolog_query(user_query)))
 
+# Now you can print and return the results
 if results:
     print("Results:")
     for result in results:
         print(result)
 else:
     print("No matching information found.")
+
