@@ -1,10 +1,14 @@
+import os
+
 from pyswip import Prolog
+from os import open, close, dup, O_WRONLY
 
 prolog = Prolog()
 
 prolog.consult('knowledge_base.pl')
 
 query_mappings = {
+    "Which diseases cause a cough with mucus?": "has_symptom(Disease, 'cough_with_mucus').",
     "What are the symptoms of semgedi?": "get_symptoms(semgedi).",
     "What are the symptoms of normal_fever?": "get_symptoms(normal_fever).",
     "What are the symptoms of unknown?": "get_symptoms(unknown).",
@@ -43,7 +47,6 @@ query_mappings = {
                                                                               "'urine_that_dark_and_cloudy_or_strong_smelling').",
     "Which diseases cause difficulty swallowing?": "has_symptom(Disease, 'difficulty_swallowing').",
     "Which diseases cause a bad taste in the mouth?": "has_symptom(Disease, 'bad_taste_in_the_mouth').",
-    "Which diseases cause a cough with mucus?": "has_symptom(Disease, 'cough_with_mucus').",
     "Which diseases cause shortness of breath?": "has_symptom(Disease, 'shortness_of_breath').",
     "Which diseases cause pain and discomfort in the abdomen?": "has_symptom(Disease, "
                                                                 "'pain_and_discomfort_in_the_abdomen').",
@@ -64,10 +67,20 @@ user_query = input("Please enter your query: ")
 
 query = translate_to_prolog_query(user_query)
 
+old = dup(1)
+close(1)
+open("test.txt", O_WRONLY)
+
 results = list(prolog.query(query))
 
+close(1)
+dup(old) # should dup to 1
+close(old) # get rid of left overs
+
+results.append(getdata())
+
 # Now you can print and return the results
-if results:
+if results[0] is not {}:
     print("Results:")
     for result in results:
         print(result)
