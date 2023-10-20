@@ -62,7 +62,9 @@ def translate_to_prolog_query(verbal_query):
 
 user_query = input("Please enter your query: ")
 
-results = list(prolog.query(translate_to_prolog_query(user_query)))
+query = translate_to_prolog_query(user_query)
+
+results = list(prolog.query(query))
 
 # Now you can print and return the results
 if results:
