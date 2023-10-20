@@ -3,6 +3,8 @@ import os
 from pyswip import Prolog
 from os import open, close, dup, O_WRONLY
 
+from pyes.data import getdata
+
 prolog = Prolog()
 
 prolog.consult('knowledge_base.pl')
