@@ -1,4 +1,8 @@
+from os import open, close, dup, O_WRONLY
+
 from pyswip import Prolog
+
+from pyes.data import getdata
 
 prolog = Prolog()
 prolog.consult('pyes/knowledge_base.pl')
@@ -60,11 +64,18 @@ def translate_to_prolog_query(verbal_query):
 
 
 def process_user_query(query: str):
-    results = list(prolog.query(translate_to_prolog_query(query)))
+    prolog_query = translate_to_prolog_query(query)
 
-    if results:
-        print("Results:")
-        for result in results:
-            print(result)
-    else:
-        print("No matching information found.")
+    old = dup(1)
+    close(1)
+    open("test.txt", O_WRONLY)
+
+    results = list(prolog.query(prolog_query))
+
+    close(1)
+    dup(old)  # should dup to 1
+    close(old)  # get rid of left overs
+
+    results.append(getdata())
+
+    return results
