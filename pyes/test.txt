@@ -1,0 +1,4 @@
+Symptom: difficulty_swallowing
+Symptom: pain_in_thorax_and_ear
+Symptom: sore_thorat
+Symptom: change_in_voice
