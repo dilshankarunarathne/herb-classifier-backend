@@ -1,4 +1,4 @@
 def getdata():
-    with open('test.txt') as f:
+    with open('pyes/data.txt') as f:
         content = f.readlines()
         return content

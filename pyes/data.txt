@@ -1,0 +1,5 @@
+Symptom: abnormal_body_temparature
+Symptom: trembling
+Symptom: tiredness
+Symptom: appette
+: change_in_voice

@@ -71,7 +71,7 @@ query = translate_to_prolog_query(user_query)
 
 old = dup(1)
 close(1)
-open("test.txt", O_WRONLY)
+open("data.txt", O_WRONLY)
 
 results = list(prolog.query(query))
 

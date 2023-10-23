@@ -68,7 +68,7 @@ def process_user_query(query: str):
 
     old = dup(1)
     close(1)
-    open("test.txt", O_WRONLY)
+    open("pyes/data.txt", O_WRONLY)
 
     results = list(prolog.query(prolog_query))
 
