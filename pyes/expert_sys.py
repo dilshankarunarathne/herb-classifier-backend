@@ -82,6 +82,8 @@ def process_user_query(query: str):
     close(1)
     dup(old)  # should dup to 1
     close(old)  # get rid of left overs
+    
+    results = [remove_special_chars(result) for result in results]
 
     results.append(getdata())
 
