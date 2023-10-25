@@ -59,16 +59,11 @@ query_mappings = {
 }
 
 
-def translate_to_prolog_query(verbal_query):
-    return query_mappings.get(verbal_query, "Unknown query.")
-
-
 def remove_special_chars(input_str: str) -> str:
     input_str = input_str.replace('\n', '')  # Remove newline characters
     input_str = input_str.replace(':', '')  # Remove colons
     input_str = input_str.replace('_', ' ')  # Replace underscores with spaces
     return input_str
-
 
 def process_user_query(query: str):
     prolog_query = translate_to_prolog_query(query)
@@ -82,8 +77,14 @@ def process_user_query(query: str):
     close(1)
     dup(old)  # should dup to 1
     close(old)  # get rid of left overs
-    
-    results = [remove_special_chars(result) for result in results]
+
+    # Apply remove_special_chars to each result
+    for i in range(len(results)):
+        if isinstance(results[i], dict):
+            for key in results[i]:
+                results[i][key] = remove_special_chars(results[i][key])
+        else:
+            results[i] = remove_special_chars(results[i])
 
     results.append(getdata())
 
