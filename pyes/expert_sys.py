@@ -69,7 +69,6 @@ def remove_special_chars(input_str: str) -> str:
     input_str = input_str.replace('_', ' ')  # Replace underscores with spaces
     return input_str
 
-
 def process_user_query(query: str):
     prolog_query = translate_to_prolog_query(query)
 
@@ -88,6 +87,8 @@ def process_user_query(query: str):
         if isinstance(results[i], dict):
             for key in results[i]:
                 results[i][key] = remove_special_chars(results[i][key])
+        elif isinstance(results[i], list):
+            results[i] = [remove_special_chars(item) for item in results[i]]
         else:
             results[i] = remove_special_chars(results[i])
 
