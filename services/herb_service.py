@@ -13,6 +13,10 @@ dao.connect()
 def get_disease_by_herb(herb):
     diseases = dao.get_disease(herb)
     return_list = []
+
+    if diseases is None:
+        return "{ 'message': '", herb, " was not found in DB!' }"
+
     for d in diseases:
         return_list.append(d[0])
     return return_list
