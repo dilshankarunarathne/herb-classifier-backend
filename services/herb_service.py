@@ -27,7 +27,7 @@ def get_herb_by_disease(disease):
     return_list = []
 
     if herbs is None:
-        raise TypeError("returned data is null")
+        return "{ 'message': '", disease, " was not found in DB!' }"
 
     for d in herbs:
         return_list.append(d[0])
