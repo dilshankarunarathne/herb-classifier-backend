@@ -15,7 +15,7 @@ def get_disease_by_herb(herb):
     return_list = []
 
     if diseases is None:
-        return {'message': (herb, " was not found in DB!")}
+        return {'message': (herb + " was not found in DB!")}
 
     for d in diseases:
         return_list.append(d[0])
@@ -27,7 +27,7 @@ def get_herb_by_disease(disease):
     return_list = []
 
     if herbs is None:
-        return {'message': (disease, " was not found in DB!")}
+        return {'message': (disease + " was not found in DB!")}
 
     for d in herbs:
         return_list.append(d[0])
